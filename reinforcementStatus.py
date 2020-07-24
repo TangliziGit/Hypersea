@@ -31,4 +31,5 @@ class ReinforcementStatus:
             return self.value
 
     def render(self):
-        time.sleep(0.0001)
+        # time.sleep(0.0001)
+        pass

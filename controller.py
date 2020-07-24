@@ -89,18 +89,9 @@ class Controller(nn.Module):
         return z_t
 
     def one_Step_In_Train_LSTM(self, After_Attention_LSTM_input):  # 一步LSTM输入输出，将h_t与c_t存储在Config中
-        if (self.LSTMInitFlag == False):
-            h_t, c_t = self.init_LSTM()
+        if not self.LSTMInitFlag:
+            Config.h_t = torch.zeros(1, self.hidden_size, dtype=torch.float, device=self.DEVICE)
+            Config.c_t = torch.zeros(1, self.hidden_size, dtype=torch.float, device=self.DEVICE)
             self.LSTMInitFlag = True
-        else:
-            h_t = Config.h_t
-            c_t = Config.c_t
-        h_t, c_t = self.lstmCell(After_Attention_LSTM_input, (h_t, c_t))
-        Config.h_t = h_t
-        Config.c_t = c_t
+        Config.h_t, Config.c_t = self.lstmCell(After_Attention_LSTM_input, (Config.h_t, Config.c_t))
         print('LSTM Done!')
-
-    def init_LSTM(self):  # 初始化LSTM网络，对h_t与c_t进行初始化
-        h_t = torch.zeros(1, self.hidden_size, dtype=torch.float, device=self.DEVICE)
-        c_t = torch.zeros(1, self.hidden_size, dtype=torch.float, device=self.DEVICE)
-        return (h_t, c_t)

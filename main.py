@@ -25,7 +25,7 @@ def main():
 
     i = 0
     while True:
-        reward = get_Reward(device, train_loader, test_loader)  # 获取奖励值
+        reward = get_reward(device, train_loader, test_loader)  # 获取奖励值
         print(f'reward: {reward}')
         print("--------------------------One cycle complete--------------------------"
               f"The cycle number: {i}")
@@ -39,7 +39,7 @@ def main():
         i += 1
 
 
-def get_Reward(device, train_loader, test_loader):  
+def get_reward(device, train_loader, test_loader):
     # 传入CIFAR数据集，对数据集进行训练后对模型进行测试后获取准确率，与上次的准确率进行比较计算奖励值送至强化学习
     
     # 训练RNN获取模型
@@ -65,14 +65,12 @@ def get_Reward(device, train_loader, test_loader):
         Config.worst_acc = accuracy
         
     last_acc = Config.last_accuracy
-    
-    if accuracy > last_acc:
-        reward = float(accuracy - Config.init_accuracy) / 100
-    else:
-        reward = float(accuracy - last_acc) / 100
-        
+
+    reward = float(accuracy - last_acc) / 100
+
     Config.last_accuracy = accuracy
     five_params_QTables.learnQTable(reward, observation, action, observation_)  # 更新Q表
+
     Config.last_a_t = Config.a_t
     
     return reward
@@ -80,7 +78,8 @@ def get_Reward(device, train_loader, test_loader):
 
 def trainRNN_Get_Model(device, train_loader):
     # 将当前RNN网络在CIFAR数据集上训练，返回训练好的模型，训练次数待定
-    
+
+    # 选择一个参数进行更新，获取前后状态和对应动作
     observation, action, observation_ = five_params_QTables.reinforcement_one_step_cnn()  # 将奖励值送进Q表内强化学习更新五个参数值
     
     print(f"CNN Params: of_Filter: {Config.of_filter}, "
@@ -88,16 +87,16 @@ def trainRNN_Get_Model(device, train_loader):
           f"Stride_Height: {Config.stride_height}, Stride_Width: {Config.stride_width}")
 
     print(f"Best CNN Params: of_Filter: {Config.best_of_filter}, "
-          f"Fiter_Height: {Config.best_filter_height}, Fiter_Width: {Config.best_filter_width}, "
+          f"Filter_Height: {Config.best_filter_height}, Filter_Width: {Config.best_filter_width}, "
           f"Stride_Height: {Config.best_stride_height}, Stride_Width: {Config.best_stride_width}, "
           f"Best Acc: {Config.best_acc}")
 
     print(f"Worst CNN Params: of_Filter: {Config.worst_of_filter}, "
-          f"Fiter_Height: {Config.worst_filter_height}, Fiter_Width: {Config.worst_filter_width}, "
+          f"Filter_Height: {Config.worst_filter_height}, Filter_Width: {Config.worst_filter_width}, "
           f"Stride_Height: {Config.worst_stride_height}, Stride_Width: {Config.worst_stride_width}, "
           f"Worst Acc: {Config.worst_acc}")
 
-    # 初始化模型
+    # 根据刚才更新的参数，初始化模型
     RnnModel = Controller.from_config(3).to(device)
 
     After_Attention_LSTM_input = RnnModel.attention()  # 做attention
@@ -106,9 +105,11 @@ def trainRNN_Get_Model(device, train_loader):
     # 损失函数
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.SGD(RnnModel.parameters(), lr=0.001, momentum=0.9)
-    for epoch in range(10):
+    print("W_h", RnnModel.W_h.cpu().weight)
+    for epoch in range(1):
         totalLoss = 0.0
         for i, data in enumerate(train_loader, 0):
+            # print("fc2", RnnModel.fc2.weight)
             inputs, labels = data
             inputs, labels = inputs.to(device), labels.to(device)
             optimizer.zero_grad()
@@ -121,7 +122,7 @@ def trainRNN_Get_Model(device, train_loader):
                 print('[Epoch %d, Batch %5d] loss: %.3f' %
                       (epoch + 1, i + 1, totalLoss / 200))
                 totalLoss = 0.0
-                
+
     # 保存网络模型 保存整个模型
     torch.save(RnnModel, 'model.pkl')
     print("train done!")
