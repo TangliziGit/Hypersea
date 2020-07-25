@@ -3,13 +3,15 @@ import torch
 
 class Config:
 
-    N_RANGE = 5
+    N_RANGE = 1
 
     v_t = torch.tensor([[10, 3, 5, 2, 1]]).to(torch.device('cuda')).float()
     a_t = torch.zeros(1, 5, dtype=torch.float, device=torch.device('cuda'), requires_grad=True)
     last_a_t = torch.zeros(1, 5, dtype=torch.float, device=torch.device('cuda'), requires_grad=True)
-    c_t = torch.zeros(1, 64, dtype=torch.float, device=torch.device('cuda'), requires_grad=True)
-    h_t = torch.zeros(1, 64, dtype=torch.float, device=torch.device('cuda'), requires_grad=True)
+    # c_t = torch.zeros(1, 64, dtype=torch.float, device=torch.device('cuda'), requires_grad=True)
+    # h_t = torch.zeros(1, 64, dtype=torch.float, device=torch.device('cuda'), requires_grad=True)
+    h_t = None
+    c_t = None
     last_accuracy = 0.5
     init_accuracy = 0.5
     reward = 0.00

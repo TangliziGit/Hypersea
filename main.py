@@ -6,11 +6,13 @@ import torchvision.transforms as transforms
 import torch.optim as optim
 
 from logger import Logger
-from controller import Controller
+from cnn_model import CnnModel
+from controller_model import ControllerModel
 from config import Config
 from q_tables import QTables
 
 q_tables = QTables()  # 创建五个对象的Q表
+controller = ControllerModel()
 losses = []
 
 
@@ -64,13 +66,15 @@ def get_reward(device, train_loader, test_loader):
 def train_cnn(device, train_loader):
 
     # 根据刚才更新的参数，初始化模型
-    model = Controller.from_config(3).to(device)
+    cnn = CnnModel.from_config(3).to(device)
 
-    attention = model.attention()
-    model.lstm(attention)
+    # 此处仅以 Config 中的 cnn 模型参数和 h_t, c_t 为输入
+    # h_t, c_t, a_t 作为输出，同时 h_t, c_t 作为 lstm 的结果，a_t 作为注意力的结果
+    attention = controller.attention()
+    controller.lstm(attention)
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    optimizer = optim.Adam(cnn.parameters(), lr=0.001)
 
     log_interval = 60
     losses.append([])
@@ -84,7 +88,7 @@ def train_cnn(device, train_loader):
             inputs, labels = inputs.to(device), labels.to(device)
 
             optimizer.zero_grad()
-            loss = criterion(model(inputs), labels)
+            loss = criterion(cnn(inputs), labels)
             loss.backward()
 
             optimizer.step()
@@ -97,8 +101,8 @@ def train_cnn(device, train_loader):
 
     Logger.stage('train', 'finish')
     pkl.dump(losses, open('pkl/losses.pkl', 'wb'))
-    torch.save(model, 'pkl/model.pkl')
-    return model
+    torch.save(cnn, 'pkl/model.pkl')
+    return cnn
 
 
 def test_cnn(model, device, test_loader):
