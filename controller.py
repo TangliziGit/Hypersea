@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 from config import Config
+from logger import Logger
 
 
 class Controller(nn.Module):
@@ -42,7 +43,7 @@ class Controller(nn.Module):
                           Config.filter_height, Config.filter_width,
                           Config.stride_height, Config.stride_width)
 
-    def forward(self, inputx):
+    def forward(self, inputs):
 
         self.out_dim = Config.of_filter
         self.filter_height = Config.filter_height
@@ -50,7 +51,7 @@ class Controller(nn.Module):
         self.stride_height = Config.stride_height
         self.stride_width = Config.stride_width
 
-        y = self.layer(inputx)
+        y = self.layer(inputs)
         y1 = y.view(-1, self.out_dim * int(((14 - self.filter_height) / self.stride_height + 1) / 2) *
                     int(((24 - self.filter_width) / self.stride_width + 1) / 2))
         y2 = self.fc1(y1)
@@ -66,7 +67,7 @@ class Controller(nn.Module):
         h_t = self.W_h(h_t)  # [1*64]*[64*64]=[1*64]
         v_t = self.W_v(v_t)  # [1*5]*[5*64]=[1*64]
         # 两个数据乘以相应权重后用tanh函数函数取值后存储在g_t
-        g_t = torch.tanh(input=(h_t + v_t)).to(self.DEVICE)  # [1*64]
+        g_t = torch.tanh(h_t + v_t).to(self.DEVICE)  # [1*64]
         # 注意力机制第二步
         s_t = (self.W_g(g_t) + 0.01).to(self.DEVICE)  # [1*64]*[64*5]=[1*5]
         # 注意力机制第三步
@@ -85,13 +86,16 @@ class Controller(nn.Module):
         test4 = numpya_t[0][3] * numpyv_t[0][3]
         test5 = numpya_t[0][4] * numpyv_t[0][4]
         z_t = torch.tensor([[test1, test2, test3, test4, test5]]).to(self.DEVICE)  # [1*5]
-        print("Attention Done!")
+
+        Logger.stage("attention", f"a_t: {Config.a_t.data}")
         return z_t
 
-    def one_Step_In_Train_LSTM(self, After_Attention_LSTM_input):  # 一步LSTM输入输出，将h_t与c_t存储在Config中
+    def lstm(self, attention):
+        # 一步LSTM输入输出，将h_t与c_t存储在Config中
         if not self.LSTMInitFlag:
             Config.h_t = torch.zeros(1, self.hidden_size, dtype=torch.float, device=self.DEVICE)
             Config.c_t = torch.zeros(1, self.hidden_size, dtype=torch.float, device=self.DEVICE)
             self.LSTMInitFlag = True
-        Config.h_t, Config.c_t = self.lstmCell(After_Attention_LSTM_input, (Config.h_t, Config.c_t))
-        print('LSTM Done!')
+        Config.h_t, Config.c_t = self.lstmCell(attention, (Config.h_t, Config.c_t))
+
+        Logger.stage("lstm", f"done")

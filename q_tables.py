@@ -1,10 +1,11 @@
 import torch
 from config import Config
 from RL_brain import QLearningTable
+from logger import Logger
 from reinforcementStatus import ReinforcementStatus
 
 
-class ReinforcementQTable:
+class QTables:
     def __init__(self):
         # 初始化每个参数的状态空间
         self.RL_of_filter = ReinforcementStatus(10, 20, 0, 0)
@@ -19,12 +20,13 @@ class ReinforcementQTable:
         self.RL_table_stride_height = QLearningTable(actions=list(range(self.RL_stride_height.n_actions)))
         self.RL_table_stride_width = QLearningTable(actions=list(range(self.RL_stride_width.n_actions)))
 
-    def reinforcement_one_step_cnn(self):
+    def step(self):
         a_t = Config.a_t
 
         # 判断是哪个参数需要进行强化学习
         testParameterTensor = torch.max(a_t, 1)[1]
         testParameter = testParameterTensor.item()
+        action = 0
 
         if testParameter == 0:  # ofFilter
             observation = Config.of_filter
@@ -36,63 +38,41 @@ class ReinforcementQTable:
             observation_ = self.RL_of_filter.step(action)
             # 将其存在Config中等待下次调用
             Config.of_filter = observation_
-            # RL learn from this transition
-            print("Change CNN Param Done!")
-            return observation, action, observation_
 
         elif testParameter == 1:  # filterHeight
             observation = Config.filter_height
-            # 做一个延迟等待操作
             self.RL_filter_height.render()
-            # 在Q表中使用当前状态值去获取将要发生的动作
             action = self.RL_table_filter_height.choose_action(str(observation))
-            # 使用动作去获取更新后的值
             observation_ = self.RL_filter_height.step(action)
-            # 将其存在Config中等待下次调用
             Config.filter_height = observation_
-            print("Change CNN Param Done!")
-            return observation, action, observation_
 
         elif testParameter == 2:  # filterWidth
             observation = Config.filter_width
-            # 做一个延迟等待操作
             self.RL_filter_width.render()
-            # 在Q表中使用当前状态值去获取将要发生的动作
             action = self.RL_table_filter_width.choose_action(str(observation))
-            # 使用动作去获取更新后的值
             observation_ = self.RL_filter_width.step(action)
-            # 将其存在Config中等待下次调用
             Config.filter_width = observation_
-            print("Change CNN Param Done!")
-            return observation, action, observation_
 
         elif testParameter == 3:  # strideHeight
             observation = Config.stride_height
-            # 做一个延迟等待操作
             self.RL_stride_height.render()
-            # 在Q表中使用当前状态值去获取将要发生的动作
             action = self.RL_table_stride_height.choose_action(str(observation))
-            # 使用动作去获取更新后的值
             observation_ = self.RL_stride_height.step(action)
-            # 将其存在Config中等待下次调用
             Config.stride_height = observation_
-            print("Change CNN Param Done!")
-            return observation, action, observation_
 
         else:  # strideWidth
             observation = Config.stride_width
-            # 做一个延迟等待操作
             self.RL_stride_width.render()
-            # 在Q表中使用当前状态值去获取将要发生的动作
             action = self.RL_table_stride_width.choose_action(str(observation))
-            # 使用动作去获取更新后的值
             observation_ = self.RL_stride_width.step(action)
-            # 将其存在Config中等待下次调用
             Config.stride_width = observation_
-            print("Change CNN Param Done!")
-            return observation, action, observation_
 
-    def learnQTable(self, reward, observation, action, observation_):
+        Logger.print("parameter selected: ", testParameter)
+        Logger.print("action: ", action)
+
+        return observation, action, observation_
+
+    def learn(self, reward, observation, action, observation_):
         a_t = Config.last_a_t
 
         # 判断是哪个参数需要进行强化学习
