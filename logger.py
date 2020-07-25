@@ -4,8 +4,8 @@ from config import Config
 
 
 class Logger:
-    prefix = '-' * 5
-    iteration = '-' * 15
+    prefix = '-->'
+    iteration = '-' * 20
 
     @staticmethod
     def iteration_start(it):

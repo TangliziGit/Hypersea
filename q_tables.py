@@ -90,4 +90,3 @@ class QTables:
         else:  # strideWidth
             self.RL_table_stride_width.learn(str(observation), action, reward, str(observation_))
 
-        print("Update Qtable Done!")
