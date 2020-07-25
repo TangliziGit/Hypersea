@@ -1,18 +1,18 @@
 import torch
 from config import Config
-from RL_brain import QLearningTable
+from q_table import QLearningTable
 from logger import Logger
-from reinforcementStatus import ReinforcementStatus
+from q_status import QStatus
 
 
 class QTables:
     def __init__(self):
         # 初始化每个参数的状态空间
-        self.RL_of_filter = ReinforcementStatus(10, 20, 0, 0)
-        self.RL_filter_height = ReinforcementStatus(3, 1, 15, 1)
-        self.RL_filter_width = ReinforcementStatus(5, 1, 25, 1)
-        self.RL_stride_height = ReinforcementStatus(2, 1, 0, 0)
-        self.RL_stride_width = ReinforcementStatus(1, 1, 0, 0)
+        self.RL_of_filter = QStatus(10, 20, 0, 0)
+        self.RL_filter_height = QStatus(3, 1, 15, 1)
+        self.RL_filter_width = QStatus(5, 1, 25, 1)
+        self.RL_stride_height = QStatus(2, 1, 0, 0)
+        self.RL_stride_width = QStatus(1, 1, 0, 0)
         # 对每个状态空间初始化Q表
         self.RL_table_of_filter = QLearningTable(actions=list(range(self.RL_of_filter.n_actions)))
         self.RL_table_filter_height = QLearningTable(actions=list(range(self.RL_filter_height.n_actions)))

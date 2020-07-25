@@ -1,7 +1,7 @@
 import time
 
 
-class ReinforcementStatus:
+class QStatus:
     def __init__(self, initValue, changeValue, MAXValue, valueID):
         self.value = initValue
         self.changeValue = changeValue
