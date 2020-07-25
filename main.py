@@ -96,8 +96,8 @@ def train_cnn(device, train_loader):
                 totalLoss = .0
 
     Logger.stage('train', 'finish')
-    pkl.dump(losses, open('losses.pkl', 'wb'))
-    torch.save(model, 'model.pkl')
+    pkl.dump(losses, open('pkl/losses.pkl', 'wb'))
+    torch.save(model, 'pkl/model.pkl')
     return model
 
 
