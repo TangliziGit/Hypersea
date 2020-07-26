@@ -2,33 +2,32 @@ import time
 
 
 class QStatus:
-    def __init__(self, initValue, changeValue, MAXValue, valueID):
-        self.value = initValue
-        self.changeValue = changeValue
-        self.MAXValue = MAXValue
-        self.valueID = valueID
+    def __init__(self, value, delta, max, type):
+        self.value = value
+        self.delta = delta
+        self.max = max
+        self.type = type
         self.action_space = ['Add', 'Sub']
         self.n_actions = len(self.action_space)
 
-    def step(self, action):
-        if self.valueID == 0:
-            if action == 0:  # ADD
-                self.value += self.changeValue
-            if action == 1:  # Sub
-                self.value -= self.changeValue
-                if self.value <= 0:
-                    self.value += self.changeValue
-            return self.value
+    def step(self, action, is_change = True):
+        # [0, 1] -> [-1, 1]
+        sign = action * 2 - 1
+        delta = sign * self.delta
+
+        if self.type == 0:
+            # value belongs to [1, inf]
+            value = self.value + delta
         else:
-            if action == 0:  # ADD
-                self.value += self.changeValue
-                if self.value >= self.MAXValue:
-                    self.value -= self.changeValue
-            if action == 1:  # Sub
-                self.value -= self.changeValue
-                if self.value <= 0:
-                    self.value += self.changeValue
-            return self.value
+            # value belongs to [1, max]
+            value = min(self.value + delta, self.max)
+
+        if value <= 0:
+            value = self.value
+
+        if is_change:
+            self.value = value
+        return value
 
     def render(self):
         # time.sleep(0.0001)

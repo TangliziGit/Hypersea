@@ -28,14 +28,23 @@ class CnnModel(nn.Module):
 
         self.layer = nn.Sequential(
             nn.Conv2d(in_dim, 130, kernel_size=(3, 5), stride=(1, 1)),
+            nn.ReLU(inplace=True),
             nn.Conv2d(130, 270, kernel_size=(4, 5), stride=(2, 1)),
+            nn.ReLU(inplace=True),
             nn.Conv2d(270, out_dim, kernel_size=(filter_height, filter_width), stride=(stride_height, stride_width)),
+            nn.ReLU(inplace=True),
             nn.MaxPool2d((2, 2), stride=(2, 2))
         )
-        self.fc1 = nn.Linear(out_dim * int(((14 - filter_height) / stride_height + 1) / 2) *
-                             int(((24 - filter_width) / stride_width + 1) / 2), 100)
-        self.fc2 = nn.Linear(100, 10)
-        self.dropout = nn.Dropout(p=0.5)
+
+        self.fc = nn.Sequential(
+            nn.Linear(out_dim * int(((14 - filter_height) / stride_height + 1) / 2) *
+                      int(((24 - filter_width) / stride_width + 1) / 2), 256),
+            nn.ReLU(inplace=True),
+            nn.Dropout(p=0.5),
+            nn.Linear(256, 128),
+            nn.ReLU(inplace=True),
+            nn.Linear(128, 10),
+        )
 
     @staticmethod
     def from_config(in_dim):
@@ -52,50 +61,8 @@ class CnnModel(nn.Module):
         self.stride_width = Config.stride_width
 
         y = self.layer(inputs)
-        y1 = y.view(-1, self.out_dim * int(((14 - self.filter_height) / self.stride_height + 1) / 2) *
+        y = y.view(-1, self.out_dim * int(((14 - self.filter_height) / self.stride_height + 1) / 2) *
                     int(((24 - self.filter_width) / self.stride_width + 1) / 2))
-        y2 = self.fc1(y1)
-        y3 = self.dropout(y2)
-        y4 = self.fc2(y3)
-        return y4
+        y = self.fc(y)
+        return y
 
-    # def attention(self):  # 一步注意力机制，从Config中获取v_t与h_t,经过注意力机制后输出z_t送予LSTM，将a_t存储在Config中
-    #     h_t = Config.h_t  # [1*64]
-    #     v_t = torch.tensor([[Config.of_filter, Config.filter_height, Config.filter_width, Config.stride_height,
-    #                          Config.stride_width]]).to(self.DEVICE).float()  # [1*5]
-    #     # 注意力机制第一步
-    #     h_t = self.W_h(h_t)  # [1*64]*[64*64]=[1*64]
-    #     v_t = self.W_v(v_t)  # [1*5]*[5*64]=[1*64]
-    #     # 两个数据乘以相应权重后用tanh函数函数取值后存储在g_t
-    #     g_t = torch.tanh(h_t + v_t).to(self.DEVICE)  # [1*64]
-    #     # 注意力机制第二步
-    #     s_t = (self.W_g(g_t) + 0.01).to(self.DEVICE)  # [1*64]*[64*5]=[1*5]
-    #     # 注意力机制第三步
-    #     a_t = torch.softmax(s_t, 1).to(self.DEVICE)  # [1*5]
-    #     # 将a_t存储在Config中，为了后续强化学习时选取需要进行学习的参数
-    #     Config.a_t = a_t  # [1*5]
-    #     v_t = torch.tensor([[Config.of_filter, Config.filter_height, Config.filter_width, Config.stride_height,
-    #                          Config.stride_width]]).to(self.DEVICE).float()
-
-    #     numpya_t = a_t.cpu().detach().numpy()
-    #     numpyv_t = v_t.cpu().detach().numpy()
-    #     # 注意力机制第四步
-    #     test1 = numpya_t[0][0] * numpyv_t[0][0]
-    #     test2 = numpya_t[0][1] * numpyv_t[0][1]
-    #     test3 = numpya_t[0][2] * numpyv_t[0][2]
-    #     test4 = numpya_t[0][3] * numpyv_t[0][3]
-    #     test5 = numpya_t[0][4] * numpyv_t[0][4]
-    #     z_t = torch.tensor([[test1, test2, test3, test4, test5]]).to(self.DEVICE)  # [1*5]
-
-    #     Logger.stage("attention", f"a_t: {Config.a_t.data}")
-    #     return z_t
-
-    # def lstm(self, attention):
-    #     # 一步LSTM输入输出，将h_t与c_t存储在Config中
-    #     if not self.LSTMInitFlag:
-    #         Config.h_t = torch.zeros(1, self.hidden_size, dtype=torch.float, device=self.DEVICE)
-    #         Config.c_t = torch.zeros(1, self.hidden_size, dtype=torch.float, device=self.DEVICE)
-    #         self.LSTMInitFlag = True
-    #     Config.h_t, Config.c_t = self.lstmCell(attention, (Config.h_t, Config.c_t))
-
-    #     Logger.stage("lstm", f"done")

@@ -4,6 +4,7 @@ import torch.nn as nn
 from config import Config
 from logger import Logger
 
+
 class ControllerModel(nn.Module):
     def __init__(self):
         super(ControllerModel, self).__init__()
@@ -21,14 +22,7 @@ class ControllerModel(nn.Module):
             Config.h_t = torch.zeros(1, self.hidden_size, dtype=torch.float, device=self.device)
             Config.c_t = torch.zeros(1, self.hidden_size, dtype=torch.float, device=self.device)
 
-    def attention(self):
-        h_t = Config.h_t  # [1*64]
-        v_t = torch.tensor([[
-            Config.of_filter,
-            Config.filter_height, Config.filter_width,
-            Config.stride_height, Config.stride_width
-        ]]).to(self.device).float()  # [1*5]
-
+    def attention(self, h_t, v_t):
         # 注意力机制第一步
         h_t = self.W_h(h_t)  # [1*64]*[64*64]=[1*64]
         v_t = self.W_v(v_t)  # [1*5]*[5*64]=[1*64]
@@ -46,8 +40,10 @@ class ControllerModel(nn.Module):
             Config.stride_height, Config.stride_width
         ]]).to(self.device).float()
 
-        numpya_t = a_t.cpu().detach().numpy()
-        numpyv_t = v_t.cpu().detach().numpy()
+        # numpya_t = a_t.cpu().detach().numpy()
+        # numpyv_t = v_t.cpu().detach().numpy()
+        numpya_t = a_t
+        numpyv_t = v_t
         # 注意力机制第四步
         test1 = numpya_t[0][0] * numpyv_t[0][0]
         test2 = numpya_t[0][1] * numpyv_t[0][1]
@@ -58,9 +54,25 @@ class ControllerModel(nn.Module):
         z_t = torch.tensor([[test1, test2, test3, test4, test5]]).to(self.device)
 
         Logger.stage("attention", f"a_t: {Config.a_t.data}")
-        return z_t
+        return a_t, z_t
 
     def lstm(self, attention):
         Config.h_t, Config.c_t = self.lstmCell(attention, (Config.h_t, Config.c_t))
 
         Logger.stage("lstm", f"done")
+
+        return Config.h_t, Config.c_t
+
+    def forward(self):
+        # inputs:
+        h_t = Config.h_t  # [1*64]
+        v_t = torch.tensor([[
+            Config.of_filter,
+            Config.filter_height, Config.filter_width,
+            Config.stride_height, Config.stride_width
+        ]]).to(self.device).float()  # [1*5]
+
+        a_t, z_t = self.attention(h_t, v_t)
+        nh_t, nc_t = self.lstm(z_t)
+
+        return a_t, nh_t, nc_t

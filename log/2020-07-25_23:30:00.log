@@ -1,0 +1,3931 @@
+Files already downloaded and verified
+Files already downloaded and verified
+
+-------------------- [[#0 iteration]] --------------------
+
+-------------------- [[#0 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    30    |      3       |      5      |      2       |      1      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2505, 0.1664, 0.2107, 0.2925, 0.0798]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.011936392386754
+[Epoch 0, Batch 119] loss: 1.6555993994077047
+[Epoch 0, Batch 179] loss: 1.543809058268865
+[Epoch 1, Batch 59] loss: 1.4495419263839722
+[Epoch 1, Batch 119] loss: 1.3883973598480224
+[Epoch 1, Batch 179] loss: 1.3362056930859885
+[Epoch 2, Batch 59] loss: 1.2539194424947102
+[Epoch 2, Batch 119] loss: 1.2427832305431366
+[Epoch 2, Batch 179] loss: 1.2294579982757567
+--> [train] finish
+--> [test] acc: 0.556
+--> [reward] reward: 0.05600000000000005
+
+-------------------- [[#0 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    10    |      2       |      5      |      2       |      1      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1911, 0.1233, 0.2313, 0.3790, 0.0753]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9857416371504466
+[Epoch 0, Batch 119] loss: 1.6884124855200449
+[Epoch 0, Batch 179] loss: 1.5644548038641612
+[Epoch 1, Batch 59] loss: 1.4802150348822276
+[Epoch 1, Batch 119] loss: 1.4371115307013194
+[Epoch 1, Batch 179] loss: 1.3881705443064372
+[Epoch 2, Batch 59] loss: 1.3204540570576986
+[Epoch 2, Batch 119] loss: 1.2966915249824524
+[Epoch 2, Batch 179] loss: 1.2642865657806397
+--> [train] finish
+--> [test] acc: 0.5373
+--> [reward] reward: 0.0373
+
+-------------------- [[#0 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    10    |      3       |      6      |      2       |      1      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1607, 0.1020, 0.2292, 0.4324, 0.0756]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0804972469806673
+[Epoch 0, Batch 119] loss: 1.8289037028948465
+[Epoch 0, Batch 179] loss: 1.7247011919816335
+[Epoch 1, Batch 59] loss: 1.658832746744156
+[Epoch 1, Batch 119] loss: 1.6075461685657502
+[Epoch 1, Batch 179] loss: 1.589721723397573
+[Epoch 2, Batch 59] loss: 1.5491723875204721
+[Epoch 2, Batch 119] loss: 1.5386472662289938
+[Epoch 2, Batch 179] loss: 1.5239420612653096
+--> [train] finish
+--> [test] acc: 0.4508
+--> [reward] reward: -0.04920000000000002
+
+-------------------- [[#0 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    10    |      3       |      5      |      1       |      1      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1701, 0.1247, 0.2437, 0.3891, 0.0723]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.1311763207117718
+[Epoch 0, Batch 119] loss: 1.9581190367539725
+[Epoch 0, Batch 179] loss: 1.8305415193239847
+[Epoch 1, Batch 59] loss: 1.766214789946874
+[Epoch 1, Batch 119] loss: 1.735812666018804
+[Epoch 1, Batch 179] loss: 1.723313428958257
+[Epoch 2, Batch 59] loss: 1.6932430803775786
+[Epoch 2, Batch 119] loss: 1.6820578535397848
+[Epoch 2, Batch 179] loss: 1.6607311546802521
+--> [train] finish
+--> [test] acc: 0.3768
+--> [reward] reward: -0.12319999999999998
+
+-------------------- [[#0 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    10    |      3       |      5      |      2       |      2      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1777, 0.1244, 0.2215, 0.4007, 0.0756]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0281154414017997
+[Epoch 0, Batch 119] loss: 1.7313712060451507
+[Epoch 0, Batch 179] loss: 1.616877406835556
+[Epoch 1, Batch 59] loss: 1.4934596041838328
+[Epoch 1, Batch 119] loss: 1.4762721240520478
+[Epoch 1, Batch 179] loss: 1.459191244840622
+[Epoch 2, Batch 59] loss: 1.3912025352319082
+[Epoch 2, Batch 119] loss: 1.3792794485886892
+[Epoch 2, Batch 179] loss: 1.3496849894523621
+--> [train] finish
+--> [test] acc: 0.5066
+--> [reward] reward: 0.00660000000000005
+parameter selected:  0
+action:  1
+--> [learn] controller loss: f0.3276236057281494
+parameter selected:  0
+action:  0
+--> [attention] a_t: tensor([[0.2836, 0.1054, 0.1952, 0.3438, 0.0720]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9571633537610371
+[Epoch 0, Batch 119] loss: 1.6447952687740326
+[Epoch 0, Batch 179] loss: 1.556965744495392
+[Epoch 1, Batch 59] loss: 1.451670946677526
+[Epoch 1, Batch 119] loss: 1.4212227642536164
+[Epoch 1, Batch 179] loss: 1.380114750067393
+[Epoch 2, Batch 59] loss: 1.3040126383304596
+[Epoch 2, Batch 119] loss: 1.273132461309433
+[Epoch 2, Batch 179] loss: 1.240803974866867
+--> [train] finish
+--> [test] acc: 0.5435
+
+-------------------- [[#1 iteration]] --------------------
+
+-------------------- [[#1 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    30    |      3       |      5      |      2       |      1      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3797, 0.1403, 0.1779, 0.2334, 0.0687]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9360594987869262
+[Epoch 0, Batch 119] loss: 1.6204228003819783
+[Epoch 0, Batch 179] loss: 1.52758878270785
+[Epoch 1, Batch 59] loss: 1.409707111120224
+[Epoch 1, Batch 119] loss: 1.3802530785401663
+[Epoch 1, Batch 179] loss: 1.3350331425666808
+[Epoch 2, Batch 59] loss: 1.2284475803375243
+[Epoch 2, Batch 119] loss: 1.1752437810103098
+[Epoch 2, Batch 179] loss: 1.1815429747104644
+--> [train] finish
+--> [test] acc: 0.5753
+--> [reward] reward: 0.03180000000000005
+
+-------------------- [[#1 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    10    |      2       |      5      |      2       |      1      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2972, 0.1100, 0.2014, 0.3224, 0.0691]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.024461770057678
+[Epoch 0, Batch 119] loss: 1.7315522313117981
+[Epoch 0, Batch 179] loss: 1.5929227471351624
+[Epoch 1, Batch 59] loss: 1.5020639955997468
+[Epoch 1, Batch 119] loss: 1.4593153695265453
+[Epoch 1, Batch 179] loss: 1.4216752111911775
+[Epoch 2, Batch 59] loss: 1.3595898608366648
+[Epoch 2, Batch 119] loss: 1.3433055480321248
+[Epoch 2, Batch 179] loss: 1.3133884251117707
+--> [train] finish
+--> [test] acc: 0.5212
+--> [reward] reward: -0.022299999999999986
+
+-------------------- [[#1 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    10    |      3       |      4      |      2       |      1      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3153, 0.1144, 0.1859, 0.3108, 0.0736]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9887008289496104
+[Epoch 0, Batch 119] loss: 1.7058008412520091
+[Epoch 0, Batch 179] loss: 1.5899298210938773
+[Epoch 1, Batch 59] loss: 1.493056583404541
+[Epoch 1, Batch 119] loss: 1.4418685893217722
+[Epoch 1, Batch 179] loss: 1.3838414629300435
+[Epoch 2, Batch 59] loss: 1.3538020690282186
+[Epoch 2, Batch 119] loss: 1.3131064156691232
+[Epoch 2, Batch 179] loss: 1.2787558595339457
+--> [train] finish
+--> [test] acc: 0.5481
+--> [reward] reward: 0.0046000000000000485
+
+-------------------- [[#1 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    10    |      3       |      5      |      3       |      1      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2987, 0.0954, 0.1751, 0.3504, 0.0803]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0576201816399893
+[Epoch 0, Batch 119] loss: 1.79102925658226
+[Epoch 0, Batch 179] loss: 1.6906115214029949
+[Epoch 1, Batch 59] loss: 1.6209632257620494
+[Epoch 1, Batch 119] loss: 1.5519049704074859
+[Epoch 1, Batch 179] loss: 1.521539032459259
+[Epoch 2, Batch 59] loss: 1.500236940383911
+[Epoch 2, Batch 119] loss: 1.4713009913762412
+[Epoch 2, Batch 179] loss: 1.4352474292119344
+--> [train] finish
+--> [test] acc: 0.4641
+--> [reward] reward: -0.07939999999999997
+
+-------------------- [[#1 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    10    |      3       |      5      |      2       |      2      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2842, 0.1128, 0.1941, 0.3394, 0.0695]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0017942786216736
+[Epoch 0, Batch 119] loss: 1.6810553987820944
+[Epoch 0, Batch 179] loss: 1.5666615863641102
+[Epoch 1, Batch 59] loss: 1.480475503206253
+[Epoch 1, Batch 119] loss: 1.4303708871205647
+[Epoch 1, Batch 179] loss: 1.3895752092202505
+[Epoch 2, Batch 59] loss: 1.355664473772049
+[Epoch 2, Batch 119] loss: 1.3118186871210733
+[Epoch 2, Batch 179] loss: 1.3050386627515158
+--> [train] finish
+--> [test] acc: 0.5278
+--> [reward] reward: -0.015699999999999936
+parameter selected:  0
+action:  1
+--> [learn] controller loss: f0.306077766418457
+parameter selected:  0
+action:  1
+--> [attention] a_t: tensor([[0.5089, 0.1192, 0.1372, 0.1747, 0.0600]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9268497069676718
+[Epoch 0, Batch 119] loss: 1.6243843058745067
+[Epoch 0, Batch 179] loss: 1.5037588159243265
+[Epoch 1, Batch 59] loss: 1.3863743881384532
+[Epoch 1, Batch 119] loss: 1.3215667088826497
+[Epoch 1, Batch 179] loss: 1.2859901706377665
+[Epoch 2, Batch 59] loss: 1.1756906410058339
+[Epoch 2, Batch 119] loss: 1.1413590808709462
+[Epoch 2, Batch 179] loss: 1.1233052243789037
+--> [train] finish
+--> [test] acc: 0.5954
+
+-------------------- [[#2 iteration]] --------------------
+
+-------------------- [[#2 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    30    |      3       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5282, 0.1103, 0.1384, 0.1685, 0.0546]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9638954758644105
+[Epoch 0, Batch 119] loss: 1.616708411773046
+[Epoch 0, Batch 179] loss: 1.509022343158722
+[Epoch 1, Batch 59] loss: 1.403884865840276
+[Epoch 1, Batch 119] loss: 1.3276379108428955
+[Epoch 1, Batch 179] loss: 1.2877783934275309
+[Epoch 2, Batch 59] loss: 1.201346892118454
+[Epoch 2, Batch 119] loss: 1.1787995676199594
+[Epoch 2, Batch 179] loss: 1.1418110648790996
+--> [train] finish
+--> [test] acc: 0.5843
+--> [reward] reward: -0.011099999999999999
+
+-------------------- [[#2 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      4       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5127, 0.1166, 0.1349, 0.1762, 0.0596]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9759552538394929
+[Epoch 0, Batch 119] loss: 1.6634466131528218
+[Epoch 0, Batch 179] loss: 1.4949472765127818
+[Epoch 1, Batch 59] loss: 1.4027053634325664
+[Epoch 1, Batch 119] loss: 1.336942627032598
+[Epoch 1, Batch 179] loss: 1.2810196340084077
+[Epoch 2, Batch 59] loss: 1.220938511689504
+[Epoch 2, Batch 119] loss: 1.1455429603656133
+[Epoch 2, Batch 179] loss: 1.155713778734207
+--> [train] finish
+--> [test] acc: 0.5943
+--> [reward] reward: -0.0010999999999999899
+
+-------------------- [[#2 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      4      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5076, 0.1185, 0.1365, 0.1769, 0.0605]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.985990305741628
+[Epoch 0, Batch 119] loss: 1.640613810221354
+[Epoch 0, Batch 179] loss: 1.5050012131532033
+[Epoch 1, Batch 59] loss: 1.4153179466724395
+[Epoch 1, Batch 119] loss: 1.344608098268509
+[Epoch 1, Batch 179] loss: 1.305257507165273
+[Epoch 2, Batch 59] loss: 1.2220521847407022
+[Epoch 2, Batch 119] loss: 1.1780044754346213
+[Epoch 2, Batch 179] loss: 1.1583196957906088
+--> [train] finish
+--> [test] acc: 0.5814
+--> [reward] reward: -0.014000000000000012
+
+-------------------- [[#2 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      3       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5142, 0.1164, 0.1353, 0.1739, 0.0603]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0543786525726317
+[Epoch 0, Batch 119] loss: 1.7714118977387747
+[Epoch 0, Batch 179] loss: 1.6397111733754477
+[Epoch 1, Batch 59] loss: 1.4947743137677512
+[Epoch 1, Batch 119] loss: 1.4620316565036773
+[Epoch 1, Batch 179] loss: 1.3910915513833364
+[Epoch 2, Batch 59] loss: 1.3212859292825063
+[Epoch 2, Batch 119] loss: 1.3036118924617768
+[Epoch 2, Batch 179] loss: 1.2398189703623455
+--> [train] finish
+--> [test] acc: 0.516
+--> [reward] reward: -0.07940000000000003
+
+-------------------- [[#2 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5103, 0.1184, 0.1376, 0.1739, 0.0597]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.999599313735962
+[Epoch 0, Batch 119] loss: 1.6734827756881714
+[Epoch 0, Batch 179] loss: 1.5210257709026336
+[Epoch 1, Batch 59] loss: 1.3978252271811167
+[Epoch 1, Batch 119] loss: 1.3139312744140625
+[Epoch 1, Batch 179] loss: 1.2995955288410186
+[Epoch 2, Batch 59] loss: 1.192699408531189
+[Epoch 2, Batch 119] loss: 1.1613728702068329
+[Epoch 2, Batch 179] loss: 1.1111599028110504
+--> [train] finish
+--> [test] acc: 0.5874
+--> [reward] reward: -0.008000000000000007
+parameter selected:  1
+action:  1
+--> [learn] controller loss: f0.34091784954071047
+parameter selected:  1
+action:  0
+--> [attention] a_t: tensor([[0.5736, 0.1370, 0.1083, 0.1332, 0.0478]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9670678496360778
+[Epoch 0, Batch 119] loss: 1.6267859617869058
+[Epoch 0, Batch 179] loss: 1.5331652899583181
+[Epoch 1, Batch 59] loss: 1.4110011180241904
+[Epoch 1, Batch 119] loss: 1.365337344010671
+[Epoch 1, Batch 179] loss: 1.291349430878957
+[Epoch 2, Batch 59] loss: 1.2167081594467164
+[Epoch 2, Batch 119] loss: 1.1853538831075032
+[Epoch 2, Batch 179] loss: 1.1557478030522665
+--> [train] finish
+--> [test] acc: 0.5902
+
+-------------------- [[#3 iteration]] --------------------
+
+-------------------- [[#3 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    70    |      3       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5607, 0.1452, 0.1087, 0.1361, 0.0493]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.979180105527242
+[Epoch 0, Batch 119] loss: 1.6492179771264395
+[Epoch 0, Batch 179] loss: 1.5456175605456035
+[Epoch 1, Batch 59] loss: 1.4474856197834014
+[Epoch 1, Batch 119] loss: 1.4080010652542114
+[Epoch 1, Batch 179] loss: 1.341950245698293
+[Epoch 2, Batch 59] loss: 1.2624284366766612
+[Epoch 2, Batch 119] loss: 1.232024614016215
+[Epoch 2, Batch 179] loss: 1.2035451928774517
+--> [train] finish
+--> [test] acc: 0.5587
+--> [reward] reward: -0.03149999999999997
+
+-------------------- [[#3 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      4       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5763, 0.1358, 0.1058, 0.1345, 0.0476]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9747671902179718
+[Epoch 0, Batch 119] loss: 1.6285311381022136
+[Epoch 0, Batch 179] loss: 1.5070834775765738
+[Epoch 1, Batch 59] loss: 1.3989157617092132
+[Epoch 1, Batch 119] loss: 1.3291853288809459
+[Epoch 1, Batch 179] loss: 1.2725894808769227
+[Epoch 2, Batch 59] loss: 1.1924266378084818
+[Epoch 2, Batch 119] loss: 1.1608797788619996
+[Epoch 2, Batch 179] loss: 1.1392960925896962
+--> [train] finish
+--> [test] acc: 0.6039
+--> [reward] reward: 0.013700000000000045
+
+-------------------- [[#3 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      4      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5708, 0.1382, 0.1076, 0.1349, 0.0485]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9783264636993407
+[Epoch 0, Batch 119] loss: 1.6712587555249532
+[Epoch 0, Batch 179] loss: 1.5471708099047343
+[Epoch 1, Batch 59] loss: 1.4380447427431742
+[Epoch 1, Batch 119] loss: 1.3883054812749227
+[Epoch 1, Batch 179] loss: 1.3408642748991648
+[Epoch 2, Batch 59] loss: 1.2675146281719207
+[Epoch 2, Batch 119] loss: 1.2364885787169138
+[Epoch 2, Batch 179] loss: 1.198069586356481
+--> [train] finish
+--> [test] acc: 0.5759
+--> [reward] reward: -0.01429999999999998
+
+-------------------- [[#3 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      3       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5783, 0.1360, 0.1062, 0.1314, 0.0481]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.043851602077484
+[Epoch 0, Batch 119] loss: 1.7357840677102407
+[Epoch 0, Batch 179] loss: 1.5982553859551747
+[Epoch 1, Batch 59] loss: 1.480394677321116
+[Epoch 1, Batch 119] loss: 1.44118173122406
+[Epoch 1, Batch 179] loss: 1.3810959001382193
+[Epoch 2, Batch 59] loss: 1.2724834283192952
+[Epoch 2, Batch 119] loss: 1.2733157018820445
+[Epoch 2, Batch 179] loss: 1.2137431740760802
+--> [train] finish
+--> [test] acc: 0.5692
+--> [reward] reward: -0.020999999999999908
+
+-------------------- [[#3 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5740, 0.1381, 0.1081, 0.1321, 0.0478]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9819964567820232
+[Epoch 0, Batch 119] loss: 1.6502821187178294
+[Epoch 0, Batch 179] loss: 1.532253615061442
+[Epoch 1, Batch 59] loss: 1.4135523517926534
+[Epoch 1, Batch 119] loss: 1.3539259711901346
+[Epoch 1, Batch 179] loss: 1.2715798795223237
+[Epoch 2, Batch 59] loss: 1.220704162120819
+[Epoch 2, Batch 119] loss: 1.169228078921636
+[Epoch 2, Batch 179] loss: 1.1596050560474396
+--> [train] finish
+--> [test] acc: 0.5943
+--> [reward] reward: 0.0041000000000001036
+parameter selected:  1
+action:  1
+--> [learn] controller loss: f0.33818304538726807
+parameter selected:  1
+action:  1
+--> [attention] a_t: tensor([[0.5651, 0.1897, 0.0895, 0.1149, 0.0408]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0128258725007373
+[Epoch 0, Batch 119] loss: 1.6742236177126566
+[Epoch 0, Batch 179] loss: 1.564521888891856
+[Epoch 1, Batch 59] loss: 1.4630318701267242
+[Epoch 1, Batch 119] loss: 1.4164077003796895
+[Epoch 1, Batch 179] loss: 1.3693771302700042
+[Epoch 2, Batch 59] loss: 1.275576615333557
+[Epoch 2, Batch 119] loss: 1.2667163411776226
+[Epoch 2, Batch 179] loss: 1.2321309367815654
+--> [train] finish
+--> [test] acc: 0.5718
+
+-------------------- [[#4 iteration]] --------------------
+
+-------------------- [[#4 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    30    |      5       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5987, 0.1696, 0.0847, 0.1100, 0.0370]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0138098736604055
+[Epoch 0, Batch 119] loss: 1.6964507798353832
+[Epoch 0, Batch 179] loss: 1.5628479878107706
+[Epoch 1, Batch 59] loss: 1.4562640885512035
+[Epoch 1, Batch 119] loss: 1.414758449792862
+[Epoch 1, Batch 179] loss: 1.3518209358056386
+[Epoch 2, Batch 59] loss: 1.2811044375101726
+[Epoch 2, Batch 119] loss: 1.2299182792504628
+[Epoch 2, Batch 179] loss: 1.184991083542506
+--> [train] finish
+--> [test] acc: 0.5773
+--> [reward] reward: 0.00550000000000006
+
+-------------------- [[#4 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      6       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5667, 0.1893, 0.0878, 0.1155, 0.0407]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9785149574279786
+[Epoch 0, Batch 119] loss: 1.6676837503910065
+[Epoch 0, Batch 179] loss: 1.534273382027944
+[Epoch 1, Batch 59] loss: 1.4351086775461832
+[Epoch 1, Batch 119] loss: 1.3797794878482819
+[Epoch 1, Batch 179] loss: 1.3300658206144969
+[Epoch 2, Batch 59] loss: 1.2489329914251963
+[Epoch 2, Batch 119] loss: 1.2154568483432133
+[Epoch 2, Batch 179] loss: 1.1784584850072861
+--> [train] finish
+--> [test] acc: 0.5703
+--> [reward] reward: -0.0014999999999999458
+
+-------------------- [[#4 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      4      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5605, 0.1920, 0.0895, 0.1164, 0.0416]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.037397853533427
+[Epoch 0, Batch 119] loss: 1.7457655370235443
+[Epoch 0, Batch 179] loss: 1.5982226093610128
+[Epoch 1, Batch 59] loss: 1.5053481499354044
+[Epoch 1, Batch 119] loss: 1.4398300687472025
+[Epoch 1, Batch 179] loss: 1.3928646802902223
+[Epoch 2, Batch 59] loss: 1.3234900514284769
+[Epoch 2, Batch 119] loss: 1.2933432479699454
+[Epoch 2, Batch 179] loss: 1.2796676357587178
+--> [train] finish
+--> [test] acc: 0.562
+--> [reward] reward: -0.00979999999999992
+
+-------------------- [[#4 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      5      |      3       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5675, 0.1896, 0.0881, 0.1137, 0.0410]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.017919633785884
+[Epoch 0, Batch 119] loss: 1.6837765336036683
+[Epoch 0, Batch 179] loss: 1.5253401935100555
+[Epoch 1, Batch 59] loss: 1.4476636568705241
+[Epoch 1, Batch 119] loss: 1.3514673431714377
+[Epoch 1, Batch 179] loss: 1.315364025036494
+[Epoch 2, Batch 59] loss: 1.2208116173744201
+[Epoch 2, Batch 119] loss: 1.2029533465703328
+[Epoch 2, Batch 179] loss: 1.1659234563509624
+--> [train] finish
+--> [test] acc: 0.584
+--> [reward] reward: 0.012199999999999989
+
+-------------------- [[#4 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5645, 0.1914, 0.0892, 0.1140, 0.0408]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.028057159980138
+[Epoch 0, Batch 119] loss: 1.7358720580736795
+[Epoch 0, Batch 179] loss: 1.570080417394638
+[Epoch 1, Batch 59] loss: 1.4549964169661205
+[Epoch 1, Batch 119] loss: 1.3991112152735392
+[Epoch 1, Batch 179] loss: 1.338859987258911
+[Epoch 2, Batch 59] loss: 1.2690900623798371
+[Epoch 2, Batch 119] loss: 1.2149887700875601
+[Epoch 2, Batch 179] loss: 1.197645268837611
+--> [train] finish
+--> [test] acc: 0.577
+--> [reward] reward: 0.005199999999999982
+parameter selected:  3
+action:  1
+--> [learn] controller loss: f0.3429168701171875
+parameter selected:  3
+action:  0
+--> [attention] a_t: tensor([[0.5041, 0.2510, 0.0820, 0.1258, 0.0370]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0300118565559386
+[Epoch 0, Batch 119] loss: 1.6853377759456634
+[Epoch 0, Batch 179] loss: 1.5779322902361552
+[Epoch 1, Batch 59] loss: 1.464567369222641
+[Epoch 1, Batch 119] loss: 1.3736322224140167
+[Epoch 1, Batch 179] loss: 1.3389403581619264
+[Epoch 2, Batch 59] loss: 1.2619099974632264
+[Epoch 2, Batch 119] loss: 1.2447957932949065
+[Epoch 2, Batch 179] loss: 1.196310665210088
+--> [train] finish
+--> [test] acc: 0.5816
+
+-------------------- [[#5 iteration]] --------------------
+
+-------------------- [[#5 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    30    |      5       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5411, 0.2259, 0.0771, 0.1219, 0.0341]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9631270428498586
+[Epoch 0, Batch 119] loss: 1.6563062946001688
+[Epoch 0, Batch 179] loss: 1.5359844982624054
+[Epoch 1, Batch 59] loss: 1.4201898276805878
+[Epoch 1, Batch 119] loss: 1.3634721676508585
+[Epoch 1, Batch 179] loss: 1.3130901336669922
+[Epoch 2, Batch 59] loss: 1.223775464296341
+[Epoch 2, Batch 119] loss: 1.2072265466054282
+[Epoch 2, Batch 179] loss: 1.1651125649611156
+--> [train] finish
+--> [test] acc: 0.5736
+--> [reward] reward: -0.008000000000000007
+
+-------------------- [[#5 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      4       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.4998, 0.2545, 0.0843, 0.1244, 0.0370]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9438651859760285
+[Epoch 0, Batch 119] loss: 1.6175829350948334
+[Epoch 0, Batch 179] loss: 1.5090833942095438
+[Epoch 1, Batch 59] loss: 1.3909768879413604
+[Epoch 1, Batch 119] loss: 1.3038245658079783
+[Epoch 1, Batch 179] loss: 1.2514589369297027
+[Epoch 2, Batch 59] loss: 1.1475584665934244
+[Epoch 2, Batch 119] loss: 1.1074248184760411
+[Epoch 2, Batch 179] loss: 1.0670041332642237
+--> [train] finish
+--> [test] acc: 0.6027
+--> [reward] reward: 0.021100000000000008
+
+-------------------- [[#5 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      4      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5000, 0.2522, 0.0820, 0.1282, 0.0376]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9962807218233745
+[Epoch 0, Batch 119] loss: 1.6836489677429198
+[Epoch 0, Batch 179] loss: 1.5562063535054524
+[Epoch 1, Batch 59] loss: 1.4597445646921794
+[Epoch 1, Batch 119] loss: 1.388573908805847
+[Epoch 1, Batch 179] loss: 1.3594181934992473
+[Epoch 2, Batch 59] loss: 1.2788793841997783
+[Epoch 2, Batch 119] loss: 1.2581934988498689
+[Epoch 2, Batch 179] loss: 1.2190849979718525
+--> [train] finish
+--> [test] acc: 0.5541
+--> [reward] reward: -0.02749999999999997
+
+-------------------- [[#5 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      5      |      3       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5065, 0.2503, 0.0805, 0.1254, 0.0373]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9915015240510305
+[Epoch 0, Batch 119] loss: 1.6634110669294992
+[Epoch 0, Batch 179] loss: 1.520174547036489
+[Epoch 1, Batch 59] loss: 1.4377945144971211
+[Epoch 1, Batch 119] loss: 1.3537654022375742
+[Epoch 1, Batch 179] loss: 1.280011030038198
+[Epoch 2, Batch 59] loss: 1.2048941592375437
+[Epoch 2, Batch 119] loss: 1.184184459845225
+[Epoch 2, Batch 179] loss: 1.1422462532917659
+--> [train] finish
+--> [test] acc: 0.5921
+--> [reward] reward: 0.010499999999999954
+
+-------------------- [[#5 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.5025, 0.2520, 0.0822, 0.1262, 0.0371]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0246289094289143
+[Epoch 0, Batch 119] loss: 1.73773432970047
+[Epoch 0, Batch 179] loss: 1.5691566169261932
+[Epoch 1, Batch 59] loss: 1.4464238027731577
+[Epoch 1, Batch 119] loss: 1.412847818930944
+[Epoch 1, Batch 179] loss: 1.3313204328219095
+[Epoch 2, Batch 59] loss: 1.2659984787305196
+[Epoch 2, Batch 119] loss: 1.2153379678726197
+[Epoch 2, Batch 179] loss: 1.2068218866984048
+--> [train] finish
+--> [test] acc: 0.5695
+--> [reward] reward: -0.0121
+parameter selected:  1
+action:  0
+--> [learn] controller loss: f0.31442101001739503
+parameter selected:  1
+action:  1
+--> [attention] a_t: tensor([[0.4095, 0.3412, 0.0750, 0.1417, 0.0325]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0245523830254872
+[Epoch 0, Batch 119] loss: 1.7066750586032868
+[Epoch 0, Batch 179] loss: 1.5808580974737803
+[Epoch 1, Batch 59] loss: 1.4547191262245178
+[Epoch 1, Batch 119] loss: 1.3919165154298148
+[Epoch 1, Batch 179] loss: 1.3529748757680258
+[Epoch 2, Batch 59] loss: 1.2822687248388926
+[Epoch 2, Batch 119] loss: 1.2310751756032308
+[Epoch 2, Batch 179] loss: 1.2090337574481964
+--> [train] finish
+--> [test] acc: 0.5663
+
+-------------------- [[#6 iteration]] --------------------
+
+-------------------- [[#6 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    30    |      5       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.4431, 0.3167, 0.0700, 0.1391, 0.0312]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9942833324273428
+[Epoch 0, Batch 119] loss: 1.6954898277918498
+[Epoch 0, Batch 179] loss: 1.5671465734640757
+[Epoch 1, Batch 59] loss: 1.4808009584744772
+[Epoch 1, Batch 119] loss: 1.439685614903768
+[Epoch 1, Batch 179] loss: 1.3887898683547975
+[Epoch 2, Batch 59] loss: 1.3239621420701344
+[Epoch 2, Batch 119] loss: 1.255467297633489
+[Epoch 2, Batch 179] loss: 1.2371978302796682
+--> [train] finish
+--> [test] acc: 0.5618
+--> [reward] reward: -0.0045000000000000595
+
+-------------------- [[#6 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      6       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.4105, 0.3405, 0.0734, 0.1429, 0.0327]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0306258181730907
+[Epoch 0, Batch 119] loss: 1.7196465154488882
+[Epoch 0, Batch 179] loss: 1.5557275613149006
+[Epoch 1, Batch 59] loss: 1.4118163506189982
+[Epoch 1, Batch 119] loss: 1.3486424684524536
+[Epoch 1, Batch 179] loss: 1.3001927971839904
+[Epoch 2, Batch 59] loss: 1.2232330958048503
+[Epoch 2, Batch 119] loss: 1.191636723279953
+[Epoch 2, Batch 179] loss: 1.144493799408277
+--> [train] finish
+--> [test] acc: 0.5667
+--> [reward] reward: 0.00039999999999995595
+
+-------------------- [[#6 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      4      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.4068, 0.3416, 0.0749, 0.1439, 0.0328]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0245811025301617
+[Epoch 0, Batch 119] loss: 1.7300164560476938
+[Epoch 0, Batch 179] loss: 1.5737828334172568
+[Epoch 1, Batch 59] loss: 1.475748254855474
+[Epoch 1, Batch 119] loss: 1.4323173860708873
+[Epoch 1, Batch 179] loss: 1.3729362567265828
+[Epoch 2, Batch 59] loss: 1.284307634830475
+[Epoch 2, Batch 119] loss: 1.2558925867080688
+[Epoch 2, Batch 179] loss: 1.2420262495676677
+--> [train] finish
+--> [test] acc: 0.5664
+--> [reward] reward: 9.999999999998899e-05
+
+-------------------- [[#6 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      5      |      3       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.4126, 0.3409, 0.0728, 0.1409, 0.0329]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.043513641754786
+[Epoch 0, Batch 119] loss: 1.715610545873642
+[Epoch 0, Batch 179] loss: 1.5637367884318034
+[Epoch 1, Batch 59] loss: 1.4425870537757874
+[Epoch 1, Batch 119] loss: 1.3992715020974478
+[Epoch 1, Batch 179] loss: 1.3578401247660319
+[Epoch 2, Batch 59] loss: 1.2886249820391338
+[Epoch 2, Batch 119] loss: 1.2553294201691945
+[Epoch 2, Batch 179] loss: 1.2196040789286295
+--> [train] finish
+--> [test] acc: 0.5636
+--> [reward] reward: -0.0027000000000000357
+
+-------------------- [[#6 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.4079, 0.3422, 0.0753, 0.1421, 0.0325]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.003918347756068
+[Epoch 0, Batch 119] loss: 1.6850883901119231
+[Epoch 0, Batch 179] loss: 1.585250586271286
+[Epoch 1, Batch 59] loss: 1.4667764802773793
+[Epoch 1, Batch 119] loss: 1.3918500145276387
+[Epoch 1, Batch 179] loss: 1.3304330150286356
+[Epoch 2, Batch 59] loss: 1.2780495246251424
+[Epoch 2, Batch 119] loss: 1.2309530715147654
+[Epoch 2, Batch 179] loss: 1.2176901797453563
+--> [train] finish
+--> [test] acc: 0.5701
+--> [reward] reward: 0.0038000000000000256
+parameter selected:  4
+action:  0
+--> [learn] controller loss: f0.357617449760437
+parameter selected:  4
+action:  0
+--> [attention] a_t: tensor([[0.3249, 0.4258, 0.0681, 0.1456, 0.0357]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.091274036963781
+[Epoch 0, Batch 119] loss: 1.8157802919546764
+[Epoch 0, Batch 179] loss: 1.6385168075561523
+[Epoch 1, Batch 59] loss: 1.500783199071884
+[Epoch 1, Batch 119] loss: 1.4416714350382487
+[Epoch 1, Batch 179] loss: 1.3576240758101146
+[Epoch 2, Batch 59] loss: 1.2999424755573272
+[Epoch 2, Batch 119] loss: 1.2745731115341186
+[Epoch 2, Batch 179] loss: 1.2185207585493723
+--> [train] finish
+--> [test] acc: 0.5648
+
+-------------------- [[#7 iteration]] --------------------
+
+-------------------- [[#7 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    30    |      5       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3515, 0.4060, 0.0629, 0.1444, 0.0353]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0023293197155
+[Epoch 0, Batch 119] loss: 1.6808128535747529
+[Epoch 0, Batch 179] loss: 1.592388238509496
+[Epoch 1, Batch 59] loss: 1.4645612557729086
+[Epoch 1, Batch 119] loss: 1.4207130094369254
+[Epoch 1, Batch 179] loss: 1.3746639370918274
+[Epoch 2, Batch 59] loss: 1.2976878861586252
+[Epoch 2, Batch 119] loss: 1.244547782341639
+[Epoch 2, Batch 179] loss: 1.205609647432963
+--> [train] finish
+--> [test] acc: 0.5826
+--> [reward] reward: 0.017800000000000038
+
+-------------------- [[#7 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      4       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3218, 0.4275, 0.0705, 0.1448, 0.0354]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9957641263802846
+[Epoch 0, Batch 119] loss: 1.6127357343832651
+[Epoch 0, Batch 179] loss: 1.476448619365692
+[Epoch 1, Batch 59] loss: 1.3889002839724223
+[Epoch 1, Batch 119] loss: 1.306607037782669
+[Epoch 1, Batch 179] loss: 1.2652344663937887
+[Epoch 2, Batch 59] loss: 1.1770349790652592
+[Epoch 2, Batch 119] loss: 1.1441051890452703
+[Epoch 2, Batch 179] loss: 1.1150396148363748
+--> [train] finish
+--> [test] acc: 0.6109
+--> [reward] reward: 0.04610000000000003
+
+-------------------- [[#7 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      4      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3229, 0.4254, 0.0679, 0.1478, 0.0360]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.029407227039337
+[Epoch 0, Batch 119] loss: 1.7112749695777894
+[Epoch 0, Batch 179] loss: 1.5661590973536172
+[Epoch 1, Batch 59] loss: 1.4755148530006408
+[Epoch 1, Batch 119] loss: 1.4075543145338694
+[Epoch 1, Batch 179] loss: 1.349735164642334
+[Epoch 2, Batch 59] loss: 1.2784730792045593
+[Epoch 2, Batch 119] loss: 1.238520363966624
+[Epoch 2, Batch 179] loss: 1.2102874577045442
+--> [train] finish
+--> [test] acc: 0.5622
+--> [reward] reward: -0.0025999999999999357
+
+-------------------- [[#7 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      5      |      3       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3279, 0.4262, 0.0654, 0.1443, 0.0361]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9853633026281992
+[Epoch 0, Batch 119] loss: 1.6596513311068217
+[Epoch 0, Batch 179] loss: 1.5176223417123158
+[Epoch 1, Batch 59] loss: 1.4095131675402324
+[Epoch 1, Batch 119] loss: 1.3712758938471477
+[Epoch 1, Batch 179] loss: 1.2919601221879324
+[Epoch 2, Batch 59] loss: 1.213836540778478
+[Epoch 2, Batch 119] loss: 1.1813404619693757
+[Epoch 2, Batch 179] loss: 1.1533026238282522
+--> [train] finish
+--> [test] acc: 0.5931
+--> [reward] reward: 0.028299999999999992
+
+-------------------- [[#7 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      5       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3237, 0.4264, 0.0683, 0.1459, 0.0356]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0052161792914074
+[Epoch 0, Batch 119] loss: 1.6690126498540243
+[Epoch 0, Batch 179] loss: 1.5419930299123128
+[Epoch 1, Batch 59] loss: 1.4184699257214863
+[Epoch 1, Batch 119] loss: 1.3864075501759847
+[Epoch 1, Batch 179] loss: 1.3163321097691854
+[Epoch 2, Batch 59] loss: 1.2472686469554901
+[Epoch 2, Batch 119] loss: 1.203049619992574
+[Epoch 2, Batch 179] loss: 1.1817496299743653
+--> [train] finish
+--> [test] acc: 0.5869
+--> [reward] reward: 0.02210000000000001
+parameter selected:  1
+action:  0
+--> [learn] controller loss: f0.2789134979248047
+parameter selected:  1
+action:  0
+--> [attention] a_t: tensor([[0.2421, 0.5359, 0.0595, 0.1261, 0.0364]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9800084074338278
+[Epoch 0, Batch 119] loss: 1.6564991335074106
+[Epoch 0, Batch 179] loss: 1.4952286740144094
+[Epoch 1, Batch 59] loss: 1.4089358349641163
+[Epoch 1, Batch 119] loss: 1.339713716506958
+[Epoch 1, Batch 179] loss: 1.2895069360733031
+[Epoch 2, Batch 59] loss: 1.2222924848397574
+[Epoch 2, Batch 119] loss: 1.1827922185262045
+[Epoch 2, Batch 179] loss: 1.1432375192642212
+--> [train] finish
+--> [test] acc: 0.5846
+
+-------------------- [[#8 iteration]] --------------------
+
+-------------------- [[#8 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    30    |      3       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2580, 0.5252, 0.0561, 0.1240, 0.0367]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9783887585004172
+[Epoch 0, Batch 119] loss: 1.6764590382575988
+[Epoch 0, Batch 179] loss: 1.5480502565701804
+[Epoch 1, Batch 59] loss: 1.4488692343235017
+[Epoch 1, Batch 119] loss: 1.380014212926229
+[Epoch 1, Batch 179] loss: 1.3487479031085967
+[Epoch 2, Batch 59] loss: 1.2892944971720377
+[Epoch 2, Batch 119] loss: 1.2367850303649903
+[Epoch 2, Batch 179] loss: 1.2116581877072652
+--> [train] finish
+--> [test] acc: 0.5694
+--> [reward] reward: -0.015199999999999991
+
+-------------------- [[#8 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      4       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2420, 0.5356, 0.0577, 0.1281, 0.0365]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9928707321484884
+[Epoch 0, Batch 119] loss: 1.6431337277094522
+[Epoch 0, Batch 179] loss: 1.486893614133199
+[Epoch 1, Batch 59] loss: 1.392240834236145
+[Epoch 1, Batch 119] loss: 1.311463431517283
+[Epoch 1, Batch 179] loss: 1.277592154343923
+[Epoch 2, Batch 59] loss: 1.1878374258677165
+[Epoch 2, Batch 119] loss: 1.1629827588796615
+[Epoch 2, Batch 179] loss: 1.1182662894328435
+--> [train] finish
+--> [test] acc: 0.5862
+--> [reward] reward: 0.0016000000000000458
+
+-------------------- [[#8 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      4      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2406, 0.5347, 0.0595, 0.1287, 0.0366]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9937531848748524
+[Epoch 0, Batch 119] loss: 1.6411708772182465
+[Epoch 0, Batch 179] loss: 1.5156081736087799
+[Epoch 1, Batch 59] loss: 1.4390398184458415
+[Epoch 1, Batch 119] loss: 1.3515245417753856
+[Epoch 1, Batch 179] loss: 1.3348607162634532
+[Epoch 2, Batch 59] loss: 1.2308618346850078
+[Epoch 2, Batch 119] loss: 1.2159625828266143
+[Epoch 2, Batch 179] loss: 1.2014474113782247
+--> [train] finish
+--> [test] acc: 0.5808
+--> [reward] reward: -0.0038000000000000256
+
+-------------------- [[#8 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      3       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2446, 0.5373, 0.0571, 0.1243, 0.0367]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.004327138264974
+[Epoch 0, Batch 119] loss: 1.6979483366012573
+[Epoch 0, Batch 179] loss: 1.5617653091748556
+[Epoch 1, Batch 59] loss: 1.451729408899943
+[Epoch 1, Batch 119] loss: 1.3871374547481536
+[Epoch 1, Batch 179] loss: 1.3687526245911916
+[Epoch 2, Batch 59] loss: 1.2510942856470744
+[Epoch 2, Batch 119] loss: 1.253302170832952
+[Epoch 2, Batch 179] loss: 1.2065950870513915
+--> [train] finish
+--> [test] acc: 0.5478
+--> [reward] reward: -0.036800000000000055
+
+-------------------- [[#8 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2416, 0.5362, 0.0594, 0.1264, 0.0363]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9705374201138814
+[Epoch 0, Batch 119] loss: 1.6306800464789073
+[Epoch 0, Batch 179] loss: 1.5037877102692923
+[Epoch 1, Batch 59] loss: 1.420284781853358
+[Epoch 1, Batch 119] loss: 1.3471721470355988
+[Epoch 1, Batch 179] loss: 1.3004454334576925
+[Epoch 2, Batch 59] loss: 1.2104946553707123
+[Epoch 2, Batch 119] loss: 1.1892903943856556
+[Epoch 2, Batch 179] loss: 1.1589327971140544
+--> [train] finish
+--> [test] acc: 0.5737
+--> [reward] reward: -0.01090000000000002
+parameter selected:  1
+action:  1
+--> [learn] controller loss: f0.2581793785095215
+parameter selected:  1
+action:  0
+--> [attention] a_t: tensor([[0.1632, 0.6760, 0.0408, 0.0908, 0.0292]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.978594430287679
+[Epoch 0, Batch 119] loss: 1.6551887611548106
+[Epoch 0, Batch 179] loss: 1.5534415821234384
+[Epoch 1, Batch 59] loss: 1.4305624922116598
+[Epoch 1, Batch 119] loss: 1.3659764667352041
+[Epoch 1, Batch 179] loss: 1.3206443866093953
+[Epoch 2, Batch 59] loss: 1.2254234979550043
+[Epoch 2, Batch 119] loss: 1.2016926149527232
+[Epoch 2, Batch 179] loss: 1.162997313340505
+--> [train] finish
+--> [test] acc: 0.5938
+
+-------------------- [[#9 iteration]] --------------------
+
+-------------------- [[#9 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    70    |      3       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1600, 0.6744, 0.0422, 0.0944, 0.0290]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9574612200260162
+[Epoch 0, Batch 119] loss: 1.6325738410154977
+[Epoch 0, Batch 179] loss: 1.5005244115988414
+[Epoch 1, Batch 59] loss: 1.4041204194227854
+[Epoch 1, Batch 119] loss: 1.3535682598749796
+[Epoch 1, Batch 179] loss: 1.3144860168298085
+[Epoch 2, Batch 59] loss: 1.2033209204673767
+[Epoch 2, Batch 119] loss: 1.1594062328338623
+[Epoch 2, Batch 179] loss: 1.1262520203987758
+--> [train] finish
+--> [test] acc: 0.6037
+--> [reward] reward: 0.00990000000000002
+
+-------------------- [[#9 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      4       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1626, 0.6760, 0.0396, 0.0924, 0.0294]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9822373429934184
+[Epoch 0, Batch 119] loss: 1.6166324317455292
+[Epoch 0, Batch 179] loss: 1.4762915273507435
+[Epoch 1, Batch 59] loss: 1.3603343447049459
+[Epoch 1, Batch 119] loss: 1.326964940627416
+[Epoch 1, Batch 179] loss: 1.2902052183945973
+[Epoch 2, Batch 59] loss: 1.2085648079713185
+[Epoch 2, Batch 119] loss: 1.1399142543474834
+[Epoch 2, Batch 179] loss: 1.1348701665798824
+--> [train] finish
+--> [test] acc: 0.5871
+--> [reward] reward: -0.006700000000000039
+
+-------------------- [[#9 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      4      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1628, 0.6754, 0.0405, 0.0920, 0.0294]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9511645178000132
+[Epoch 0, Batch 119] loss: 1.654904019832611
+[Epoch 0, Batch 179] loss: 1.5279447297255198
+[Epoch 1, Batch 59] loss: 1.427367095152537
+[Epoch 1, Batch 119] loss: 1.3808044373989106
+[Epoch 1, Batch 179] loss: 1.312802674372991
+[Epoch 2, Batch 59] loss: 1.2380831698576609
+[Epoch 2, Batch 119] loss: 1.2079024811585743
+[Epoch 2, Batch 179] loss: 1.1757620175679524
+--> [train] finish
+--> [test] acc: 0.5804
+--> [reward] reward: -0.013399999999999967
+
+-------------------- [[#9 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      3       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1645, 0.6772, 0.0393, 0.0894, 0.0295]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9932473083337148
+[Epoch 0, Batch 119] loss: 1.721689134836197
+[Epoch 0, Batch 179] loss: 1.5716249922911325
+[Epoch 1, Batch 59] loss: 1.4661031762758892
+[Epoch 1, Batch 119] loss: 1.416604212919871
+[Epoch 1, Batch 179] loss: 1.370395580927531
+[Epoch 2, Batch 59] loss: 1.2954819877942403
+[Epoch 2, Batch 119] loss: 1.2664780378341676
+[Epoch 2, Batch 179] loss: 1.2117147346337636
+--> [train] finish
+--> [test] acc: 0.5603
+--> [reward] reward: -0.033499999999999974
+
+-------------------- [[#9 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1630, 0.6764, 0.0406, 0.0907, 0.0292]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9487676779429117
+[Epoch 0, Batch 119] loss: 1.6360932370026906
+[Epoch 0, Batch 179] loss: 1.5116965452829996
+[Epoch 1, Batch 59] loss: 1.413617084423701
+[Epoch 1, Batch 119] loss: 1.3269234657287599
+[Epoch 1, Batch 179] loss: 1.30747429728508
+[Epoch 2, Batch 59] loss: 1.2117945849895477
+[Epoch 2, Batch 119] loss: 1.1938986738522848
+[Epoch 2, Batch 179] loss: 1.1410636087258657
+--> [train] finish
+--> [test] acc: 0.5922
+--> [reward] reward: -0.0016000000000000458
+parameter selected:  0
+action:  1
+--> [learn] controller loss: f0.33582363128662107
+parameter selected:  0
+action:  0
+--> [attention] a_t: tensor([[0.1348, 0.7446, 0.0298, 0.0672, 0.0236]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9912045458952585
+[Epoch 0, Batch 119] loss: 1.6519230504830678
+[Epoch 0, Batch 179] loss: 1.5037942588329316
+[Epoch 1, Batch 59] loss: 1.4035234212875367
+[Epoch 1, Batch 119] loss: 1.314619735876719
+[Epoch 1, Batch 179] loss: 1.280838777621587
+[Epoch 2, Batch 59] loss: 1.1574363172054292
+[Epoch 2, Batch 119] loss: 1.147209459543228
+[Epoch 2, Batch 179] loss: 1.1206260353326798
+--> [train] finish
+--> [test] acc: 0.6087
+
+-------------------- [[#10 iteration]] --------------------
+
+-------------------- [[#10 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    30    |      3       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1405, 0.7386, 0.0285, 0.0679, 0.0245]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9634310801823933
+[Epoch 0, Batch 119] loss: 1.6082579712073009
+[Epoch 0, Batch 179] loss: 1.4994748016198476
+[Epoch 1, Batch 59] loss: 1.4090152402718863
+[Epoch 1, Batch 119] loss: 1.3438523848851522
+[Epoch 1, Batch 179] loss: 1.2906604806582134
+[Epoch 2, Batch 59] loss: 1.211544503768285
+[Epoch 2, Batch 119] loss: 1.1831003963947295
+[Epoch 2, Batch 179] loss: 1.1502725640932718
+--> [train] finish
+--> [test] acc: 0.5887
+--> [reward] reward: -0.020000000000000018
+
+-------------------- [[#10 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      4       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1343, 0.7446, 0.0288, 0.0685, 0.0238]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9553575853506724
+[Epoch 0, Batch 119] loss: 1.6103245834509532
+[Epoch 0, Batch 179] loss: 1.5085090001424153
+[Epoch 1, Batch 59] loss: 1.3897399246692657
+[Epoch 1, Batch 119] loss: 1.3431594888369243
+[Epoch 1, Batch 179] loss: 1.2762746592362721
+[Epoch 2, Batch 59] loss: 1.2071763654549916
+[Epoch 2, Batch 119] loss: 1.1689643204212188
+[Epoch 2, Batch 179] loss: 1.1183260430892308
+--> [train] finish
+--> [test] acc: 0.5882
+--> [reward] reward: -0.020500000000000074
+
+-------------------- [[#10 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      4      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1351, 0.7445, 0.0293, 0.0674, 0.0238]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0092375695705416
+[Epoch 0, Batch 119] loss: 1.6793145020802815
+[Epoch 0, Batch 179] loss: 1.5543291668097179
+[Epoch 1, Batch 59] loss: 1.4591560661792755
+[Epoch 1, Batch 119] loss: 1.4078988134860992
+[Epoch 1, Batch 179] loss: 1.373337831099828
+[Epoch 2, Batch 59] loss: 1.276527867714564
+[Epoch 2, Batch 119] loss: 1.2465757787227632
+[Epoch 2, Batch 179] loss: 1.2223276913166046
+--> [train] finish
+--> [test] acc: 0.5593
+--> [reward] reward: -0.0494
+
+-------------------- [[#10 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      3       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1362, 0.7453, 0.0287, 0.0659, 0.0239]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.025512852271398
+[Epoch 0, Batch 119] loss: 1.7167674879233041
+[Epoch 0, Batch 179] loss: 1.6472153087457022
+[Epoch 1, Batch 59] loss: 1.5497100631395975
+[Epoch 1, Batch 119] loss: 1.4683893342812857
+[Epoch 1, Batch 179] loss: 1.4476396143436432
+[Epoch 2, Batch 59] loss: 1.358207752307256
+[Epoch 2, Batch 119] loss: 1.3609886666138966
+[Epoch 2, Batch 179] loss: 1.3018161237239838
+--> [train] finish
+--> [test] acc: 0.5347
+--> [reward] reward: -0.07400000000000007
+
+-------------------- [[#10 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1351, 0.7449, 0.0297, 0.0667, 0.0236]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9932628492514293
+[Epoch 0, Batch 119] loss: 1.684958577156067
+[Epoch 0, Batch 179] loss: 1.544843029975891
+[Epoch 1, Batch 59] loss: 1.4486198544502258
+[Epoch 1, Batch 119] loss: 1.3845054924488067
+[Epoch 1, Batch 179] loss: 1.337154326836268
+[Epoch 2, Batch 59] loss: 1.2577228685220083
+[Epoch 2, Batch 119] loss: 1.2199153323968253
+[Epoch 2, Batch 179] loss: 1.200130315621694
+--> [train] finish
+--> [test] acc: 0.587
+--> [reward] reward: -0.021700000000000053
+parameter selected:  0
+action:  1
+--> [learn] controller loss: f0.3434276103973389
+parameter selected:  0
+action:  1
+--> [attention] a_t: tensor([[0.1485, 0.7432, 0.0272, 0.0593, 0.0219]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9905996779600779
+[Epoch 0, Batch 119] loss: 1.6419473588466644
+[Epoch 0, Batch 179] loss: 1.5199352423350017
+[Epoch 1, Batch 59] loss: 1.4024653514226277
+[Epoch 1, Batch 119] loss: 1.3527939399083455
+[Epoch 1, Batch 179] loss: 1.2866788466771444
+[Epoch 2, Batch 59] loss: 1.2089921454588572
+[Epoch 2, Batch 119] loss: 1.182672956585884
+[Epoch 2, Batch 179] loss: 1.153461617231369
+--> [train] finish
+--> [test] acc: 0.5802
+
+-------------------- [[#11 iteration]] --------------------
+
+-------------------- [[#11 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   110    |      3       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1484, 0.7425, 0.0278, 0.0594, 0.0218]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9384055932362874
+[Epoch 0, Batch 119] loss: 1.6157946805159251
+[Epoch 0, Batch 179] loss: 1.503549039363861
+[Epoch 1, Batch 59] loss: 1.3836611648400625
+[Epoch 1, Batch 119] loss: 1.3117982029914856
+[Epoch 1, Batch 179] loss: 1.2817422052224476
+[Epoch 2, Batch 59] loss: 1.174357940753301
+[Epoch 2, Batch 119] loss: 1.1331375628709792
+[Epoch 2, Batch 179] loss: 1.1021592289209365
+--> [train] finish
+--> [test] acc: 0.613
+--> [reward] reward: 0.03279999999999994
+
+-------------------- [[#11 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      2       |      5      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1502, 0.7431, 0.0278, 0.0572, 0.0218]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9870958268642425
+[Epoch 0, Batch 119] loss: 1.6684978048006693
+[Epoch 0, Batch 179] loss: 1.581755820910136
+[Epoch 1, Batch 59] loss: 1.4456621646881103
+[Epoch 1, Batch 119] loss: 1.3829146285851797
+[Epoch 1, Batch 179] loss: 1.3449293931325277
+[Epoch 2, Batch 59] loss: 1.2549162705739338
+[Epoch 2, Batch 119] loss: 1.2213331043720246
+[Epoch 2, Batch 179] loss: 1.2045342524846394
+--> [train] finish
+--> [test] acc: 0.576
+--> [reward] reward: -0.0042000000000000925
+
+-------------------- [[#11 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      6      |      2       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1496, 0.7436, 0.0273, 0.0577, 0.0218]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9738448282082877
+[Epoch 0, Batch 119] loss: 1.6572379926840464
+[Epoch 0, Batch 179] loss: 1.5437846581141155
+[Epoch 1, Batch 59] loss: 1.4332805494467418
+[Epoch 1, Batch 119] loss: 1.3695724507172902
+[Epoch 1, Batch 179] loss: 1.3149688084920248
+[Epoch 2, Batch 59] loss: 1.2340814093748729
+[Epoch 2, Batch 119] loss: 1.2260815064112345
+[Epoch 2, Batch 179] loss: 1.165002018213272
+--> [train] finish
+--> [test] acc: 0.5815
+--> [reward] reward: 0.0012999999999999678
+
+-------------------- [[#11 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      3       |      1      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1502, 0.7437, 0.0266, 0.0575, 0.0220]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0428623179594676
+[Epoch 0, Batch 119] loss: 1.7416518727938335
+[Epoch 0, Batch 179] loss: 1.6122033019860587
+[Epoch 1, Batch 59] loss: 1.4879721343517303
+[Epoch 1, Batch 119] loss: 1.4398774643739065
+[Epoch 1, Batch 179] loss: 1.3779613455136617
+[Epoch 2, Batch 59] loss: 1.2980309009552002
+[Epoch 2, Batch 119] loss: 1.2787533283233643
+[Epoch 2, Batch 179] loss: 1.2442521631717682
+--> [train] finish
+--> [test] acc: 0.5566
+--> [reward] reward: -0.023600000000000065
+
+-------------------- [[#11 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      2       |      2      |
+|   best  |    50    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1510, 0.7438, 0.0267, 0.0565, 0.0220]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9709174414475759
+[Epoch 0, Batch 119] loss: 1.6313567320505777
+[Epoch 0, Batch 179] loss: 1.5300072014331818
+[Epoch 1, Batch 59] loss: 1.40035320520401
+[Epoch 1, Batch 119] loss: 1.3427259425322216
+[Epoch 1, Batch 179] loss: 1.2647399882475534
+[Epoch 2, Batch 59] loss: 1.1907381594181061
+[Epoch 2, Batch 119] loss: 1.1658594896396002
+[Epoch 2, Batch 179] loss: 1.1251495450735092
+--> [train] finish
+--> [test] acc: 0.6002
+--> [reward] reward: 0.019999999999999907
+parameter selected:  0
+action:  1
+--> [learn] controller loss: f0.3402597427368164
+parameter selected:  0
+action:  0
+--> [attention] a_t: tensor([[0.1984, 0.6974, 0.0268, 0.0550, 0.0224]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9168121576309205
+[Epoch 0, Batch 119] loss: 1.5917606234550477
+[Epoch 0, Batch 179] loss: 1.4821656127770741
+[Epoch 1, Batch 59] loss: 1.3662896037101746
+[Epoch 1, Batch 119] loss: 1.3174098471800486
+[Epoch 1, Batch 179] loss: 1.235796759525935
+[Epoch 2, Batch 59] loss: 1.160890386501948
+[Epoch 2, Batch 119] loss: 1.1079506943623225
+[Epoch 2, Batch 179] loss: 1.0968204965194066
+--> [train] finish
+--> [test] acc: 0.6166
+
+-------------------- [[#12 iteration]] --------------------
+
+-------------------- [[#12 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   110    |      3       |      5      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1985, 0.6969, 0.0273, 0.0549, 0.0223]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9605084915955862
+[Epoch 0, Batch 119] loss: 1.6579352815945942
+[Epoch 0, Batch 179] loss: 1.533866105477015
+[Epoch 1, Batch 59] loss: 1.4287720421950023
+[Epoch 1, Batch 119] loss: 1.3610178232192993
+[Epoch 1, Batch 179] loss: 1.3123737196127574
+[Epoch 2, Batch 59] loss: 1.2278939545154572
+[Epoch 2, Batch 119] loss: 1.1606842478116353
+[Epoch 2, Batch 179] loss: 1.1439672450224558
+--> [train] finish
+--> [test] acc: 0.6045
+--> [reward] reward: -0.0121
+
+-------------------- [[#12 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      2       |      5      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1990, 0.6969, 0.0273, 0.0544, 0.0223]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9568745116392772
+[Epoch 0, Batch 119] loss: 1.641226625442505
+[Epoch 0, Batch 179] loss: 1.5507840931415557
+[Epoch 1, Batch 59] loss: 1.4271378179391225
+[Epoch 1, Batch 119] loss: 1.3653035442034402
+[Epoch 1, Batch 179] loss: 1.30984521706899
+[Epoch 2, Batch 59] loss: 1.2176728924115499
+[Epoch 2, Batch 119] loss: 1.1615238596995672
+[Epoch 2, Batch 179] loss: 1.160761719942093
+--> [train] finish
+--> [test] acc: 0.5869
+--> [reward] reward: -0.02970000000000006
+
+-------------------- [[#12 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      6      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1988, 0.6972, 0.0271, 0.0545, 0.0223]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.003750063975652
+[Epoch 0, Batch 119] loss: 1.642667406797409
+[Epoch 0, Batch 179] loss: 1.5159605224927266
+[Epoch 1, Batch 59] loss: 1.3918969055016837
+[Epoch 1, Batch 119] loss: 1.3409011284510295
+[Epoch 1, Batch 179] loss: 1.284419027964274
+[Epoch 2, Batch 59] loss: 1.1786400457223256
+[Epoch 2, Batch 119] loss: 1.1505442013343175
+[Epoch 2, Batch 179] loss: 1.1181059271097182
+--> [train] finish
+--> [test] acc: 0.608
+--> [reward] reward: -0.008600000000000052
+
+-------------------- [[#12 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      3       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1994, 0.6977, 0.0260, 0.0542, 0.0226]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0003019690513613
+[Epoch 0, Batch 119] loss: 1.681743367513021
+[Epoch 0, Batch 179] loss: 1.5706905961036681
+[Epoch 1, Batch 59] loss: 1.4559460123380026
+[Epoch 1, Batch 119] loss: 1.383137152592341
+[Epoch 1, Batch 179] loss: 1.3322834173838298
+[Epoch 2, Batch 59] loss: 1.2558185776074728
+[Epoch 2, Batch 119] loss: 1.2023358782132467
+[Epoch 2, Batch 179] loss: 1.1987829824288687
+--> [train] finish
+--> [test] acc: 0.5735
+--> [reward] reward: -0.04310000000000003
+
+-------------------- [[#12 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      2       |      2      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1998, 0.6977, 0.0260, 0.0539, 0.0227]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9192865788936615
+[Epoch 0, Batch 119] loss: 1.60971031387647
+[Epoch 0, Batch 179] loss: 1.489470160007477
+[Epoch 1, Batch 59] loss: 1.377338210741679
+[Epoch 1, Batch 119] loss: 1.2974472165107727
+[Epoch 1, Batch 179] loss: 1.2356853346029917
+[Epoch 2, Batch 59] loss: 1.1704689224561056
+[Epoch 2, Batch 119] loss: 1.1311080237229665
+[Epoch 2, Batch 179] loss: 1.0819619397322338
+--> [train] finish
+--> [test] acc: 0.5919
+--> [reward] reward: -0.024700000000000055
+parameter selected:  2
+action:  1
+--> [learn] controller loss: f0.3640186548233032
+parameter selected:  2
+action:  0
+--> [attention] a_t: tensor([[0.2552, 0.6351, 0.0307, 0.0556, 0.0235]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.957411817709605
+[Epoch 0, Batch 119] loss: 1.6246353646119436
+[Epoch 0, Batch 179] loss: 1.487278155485789
+[Epoch 1, Batch 59] loss: 1.3957931220531463
+[Epoch 1, Batch 119] loss: 1.3205173035462698
+[Epoch 1, Batch 179] loss: 1.264304773012797
+[Epoch 2, Batch 59] loss: 1.1831328570842743
+[Epoch 2, Batch 119] loss: 1.1451779762903849
+[Epoch 2, Batch 179] loss: 1.1183186491330466
+--> [train] finish
+--> [test] acc: 0.5995
+
+-------------------- [[#13 iteration]] --------------------
+
+-------------------- [[#13 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    70    |      3       |      5      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2553, 0.6355, 0.0302, 0.0554, 0.0237]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9792823493480682
+[Epoch 0, Batch 119] loss: 1.6413944701353709
+[Epoch 0, Batch 179] loss: 1.5159796436627706
+[Epoch 1, Batch 59] loss: 1.396396166086197
+[Epoch 1, Batch 119] loss: 1.3545998911062875
+[Epoch 1, Batch 179] loss: 1.2867032567660013
+[Epoch 2, Batch 59] loss: 1.201224499940872
+[Epoch 2, Batch 119] loss: 1.177870824933052
+[Epoch 2, Batch 179] loss: 1.1278433799743652
+--> [train] finish
+--> [test] acc: 0.6018
+--> [reward] reward: 0.0022999999999999687
+
+-------------------- [[#13 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      4       |      5      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2551, 0.6356, 0.0301, 0.0556, 0.0237]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9685383637746174
+[Epoch 0, Batch 119] loss: 1.6396870950857798
+[Epoch 0, Batch 179] loss: 1.486061837275823
+[Epoch 1, Batch 59] loss: 1.3763441224892934
+[Epoch 1, Batch 119] loss: 1.313023861249288
+[Epoch 1, Batch 179] loss: 1.2547311822573344
+[Epoch 2, Batch 59] loss: 1.1723226686318715
+[Epoch 2, Batch 119] loss: 1.1243185927470525
+[Epoch 2, Batch 179] loss: 1.1039319902658462
+--> [train] finish
+--> [test] acc: 0.5917
+--> [reward] reward: -0.007800000000000029
+
+-------------------- [[#13 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      6      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2554, 0.6346, 0.0311, 0.0555, 0.0234]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.989554476737976
+[Epoch 0, Batch 119] loss: 1.6562385777632396
+[Epoch 0, Batch 179] loss: 1.5524668872356415
+[Epoch 1, Batch 59] loss: 1.4265780826409658
+[Epoch 1, Batch 119] loss: 1.3791296243667603
+[Epoch 1, Batch 179] loss: 1.3253933926423391
+[Epoch 2, Batch 59] loss: 1.2431325455506643
+[Epoch 2, Batch 119] loss: 1.2300956885019938
+[Epoch 2, Batch 179] loss: 1.1653094202280045
+--> [train] finish
+--> [test] acc: 0.5785
+--> [reward] reward: -0.02100000000000002
+
+-------------------- [[#13 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      3       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2555, 0.6358, 0.0297, 0.0551, 0.0238]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0278983493645986
+[Epoch 0, Batch 119] loss: 1.7159039398034415
+[Epoch 0, Batch 179] loss: 1.5905884722868602
+[Epoch 1, Batch 59] loss: 1.5027836680412292
+[Epoch 1, Batch 119] loss: 1.4156334817409515
+[Epoch 1, Batch 179] loss: 1.3868182937304179
+[Epoch 2, Batch 59] loss: 1.287720360358556
+[Epoch 2, Batch 119] loss: 1.239762250582377
+[Epoch 2, Batch 179] loss: 1.2006210923194884
+--> [train] finish
+--> [test] acc: 0.5656
+--> [reward] reward: -0.03390000000000004
+
+-------------------- [[#13 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2553, 0.6350, 0.0307, 0.0555, 0.0235]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.960136850674947
+[Epoch 0, Batch 119] loss: 1.6452795724074045
+[Epoch 0, Batch 179] loss: 1.5443766991297403
+[Epoch 1, Batch 59] loss: 1.4510040640830995
+[Epoch 1, Batch 119] loss: 1.358794246117274
+[Epoch 1, Batch 179] loss: 1.3081423302491506
+[Epoch 2, Batch 59] loss: 1.2327853401501974
+[Epoch 2, Batch 119] loss: 1.1727535625298817
+[Epoch 2, Batch 179] loss: 1.164026923974355
+--> [train] finish
+--> [test] acc: 0.5933
+--> [reward] reward: -0.006199999999999983
+parameter selected:  0
+action:  0
+--> [learn] controller loss: f0.31673643589019773
+parameter selected:  0
+action:  0
+--> [attention] a_t: tensor([[0.3453, 0.5390, 0.0344, 0.0567, 0.0246]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9410877068837484
+[Epoch 0, Batch 119] loss: 1.646755580107371
+[Epoch 0, Batch 179] loss: 1.5120565911134085
+[Epoch 1, Batch 59] loss: 1.4163339734077454
+[Epoch 1, Batch 119] loss: 1.3516542096932729
+[Epoch 1, Batch 179] loss: 1.2971515814463297
+[Epoch 2, Batch 59] loss: 1.2052430133024852
+[Epoch 2, Batch 119] loss: 1.1917234818140665
+[Epoch 2, Batch 179] loss: 1.1432966927687327
+--> [train] finish
+--> [test] acc: 0.563
+
+-------------------- [[#14 iteration]] --------------------
+
+-------------------- [[#14 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    70    |      3       |      5      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3459, 0.5379, 0.0352, 0.0567, 0.0243]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9838477810223898
+[Epoch 0, Batch 119] loss: 1.661150908470154
+[Epoch 0, Batch 179] loss: 1.521120023727417
+[Epoch 1, Batch 59] loss: 1.4154191712538402
+[Epoch 1, Batch 119] loss: 1.361143430074056
+[Epoch 1, Batch 179] loss: 1.3102187633514404
+[Epoch 2, Batch 59] loss: 1.238945206006368
+[Epoch 2, Batch 119] loss: 1.187551999092102
+[Epoch 2, Batch 179] loss: 1.163041607538859
+--> [train] finish
+--> [test] acc: 0.5946
+--> [reward] reward: 0.03160000000000007
+
+-------------------- [[#14 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      4       |      5      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3447, 0.5403, 0.0335, 0.0567, 0.0248]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.027367043495178
+[Epoch 0, Batch 119] loss: 1.6998143355051676
+[Epoch 0, Batch 179] loss: 1.5547825316588084
+[Epoch 1, Batch 59] loss: 1.4437446892261505
+[Epoch 1, Batch 119] loss: 1.3930968582630157
+[Epoch 1, Batch 179] loss: 1.337165743112564
+[Epoch 2, Batch 59] loss: 1.2752816637357076
+[Epoch 2, Batch 119] loss: 1.2310693562030792
+[Epoch 2, Batch 179] loss: 1.209211786588033
+--> [train] finish
+--> [test] acc: 0.554
+--> [reward] reward: -0.008999999999999897
+
+-------------------- [[#14 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      6      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3457, 0.5380, 0.0351, 0.0568, 0.0244]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9664980351924897
+[Epoch 0, Batch 119] loss: 1.6498777151107789
+[Epoch 0, Batch 179] loss: 1.5395715336004894
+[Epoch 1, Batch 59] loss: 1.4272582133611043
+[Epoch 1, Batch 119] loss: 1.357413073380788
+[Epoch 1, Batch 179] loss: 1.3602474927902222
+[Epoch 2, Batch 59] loss: 1.2674539546171824
+[Epoch 2, Batch 119] loss: 1.2013178249200185
+[Epoch 2, Batch 179] loss: 1.1685181200504302
+--> [train] finish
+--> [test] acc: 0.5837
+--> [reward] reward: 0.02070000000000005
+
+-------------------- [[#14 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      3       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3448, 0.5410, 0.0329, 0.0564, 0.0249]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.071665267149607
+[Epoch 0, Batch 119] loss: 1.79049547513326
+[Epoch 0, Batch 179] loss: 1.6419974525769552
+[Epoch 1, Batch 59] loss: 1.5357530256112417
+[Epoch 1, Batch 119] loss: 1.4933056592941285
+[Epoch 1, Batch 179] loss: 1.4426334381103516
+[Epoch 2, Batch 59] loss: 1.380382881561915
+[Epoch 2, Batch 119] loss: 1.3460953613122304
+[Epoch 2, Batch 179] loss: 1.2968593021233876
+--> [train] finish
+--> [test] acc: 0.5351
+--> [reward] reward: -0.027899999999999925
+
+-------------------- [[#14 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    50    |      3       |      5      |      2       |      2      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.3452, 0.5407, 0.0330, 0.0561, 0.0250]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.991141543785731
+[Epoch 0, Batch 119] loss: 1.650878761212031
+[Epoch 0, Batch 179] loss: 1.5217227617899576
+[Epoch 1, Batch 59] loss: 1.4052121142546337
+[Epoch 1, Batch 119] loss: 1.3502806882063547
+[Epoch 1, Batch 179] loss: 1.3081725339094799
+[Epoch 2, Batch 59] loss: 1.2289689898490905
+[Epoch 2, Batch 119] loss: 1.191220941146215
+[Epoch 2, Batch 179] loss: 1.1510925531387328
+--> [train] finish
+--> [test] acc: 0.5913
+--> [reward] reward: 0.028300000000000103
+parameter selected:  0
+action:  1
+--> [learn] controller loss: f0.29734365940093993
+parameter selected:  0
+action:  1
+--> [attention] a_t: tensor([[0.4932, 0.3941, 0.0365, 0.0538, 0.0223]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9622565925121307
+[Epoch 0, Batch 119] loss: 1.6223444283008575
+[Epoch 0, Batch 179] loss: 1.5083712716897328
+[Epoch 1, Batch 59] loss: 1.3776155849297842
+[Epoch 1, Batch 119] loss: 1.3280598123868306
+[Epoch 1, Batch 179] loss: 1.2809840420881906
+[Epoch 2, Batch 59] loss: 1.213283493121465
+[Epoch 2, Batch 119] loss: 1.1474779824415842
+[Epoch 2, Batch 179] loss: 1.0991307328144708
+--> [train] finish
+--> [test] acc: 0.5841
+
+-------------------- [[#15 iteration]] --------------------
+
+-------------------- [[#15 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    70    |      3       |      5      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.4928, 0.3948, 0.0361, 0.0538, 0.0224]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0194008628527325
+[Epoch 0, Batch 119] loss: 1.6771992882092794
+[Epoch 0, Batch 179] loss: 1.5289734760920206
+[Epoch 1, Batch 59] loss: 1.4068385859330494
+[Epoch 1, Batch 119] loss: 1.3918967127799988
+[Epoch 1, Batch 179] loss: 1.3093628803888957
+[Epoch 2, Batch 59] loss: 1.2332539280255637
+[Epoch 2, Batch 119] loss: 1.1924548824628194
+[Epoch 2, Batch 179] loss: 1.14653293689092
+--> [train] finish
+--> [test] acc: 0.5861
+--> [reward] reward: 0.0020000000000000018
+
+-------------------- [[#15 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      4       |      5      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.4930, 0.3946, 0.0362, 0.0538, 0.0224]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9298898835976919
+[Epoch 0, Batch 119] loss: 1.6007561186949413
+[Epoch 0, Batch 179] loss: 1.4933146814505258
+[Epoch 1, Batch 59] loss: 1.404541931549708
+[Epoch 1, Batch 119] loss: 1.3219090859095255
+[Epoch 1, Batch 179] loss: 1.2557705760002136
+[Epoch 2, Batch 59] loss: 1.1792232632637023
+[Epoch 2, Batch 119] loss: 1.141731862227122
+[Epoch 2, Batch 179] loss: 1.120179902513822
+--> [train] finish
+--> [test] acc: 0.5918
+--> [reward] reward: 0.00770000000000004
+
+-------------------- [[#15 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      6      |      2       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.4936, 0.3937, 0.0367, 0.0538, 0.0223]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0080318212509156
+[Epoch 0, Batch 119] loss: 1.64493834177653
+[Epoch 0, Batch 179] loss: 1.5465214550495148
+[Epoch 1, Batch 59] loss: 1.3935159385204314
+[Epoch 1, Batch 119] loss: 1.3611325283845266
+[Epoch 1, Batch 179] loss: 1.3073063870271047
+[Epoch 2, Batch 59] loss: 1.2106731573740641
+[Epoch 2, Batch 119] loss: 1.1910728136698405
+[Epoch 2, Batch 179] loss: 1.1423853983481724
+--> [train] finish
+--> [test] acc: 0.5996
+--> [reward] reward: 0.01550000000000007
+
+-------------------- [[#15 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      1       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.4931, 0.3937, 0.0369, 0.0540, 0.0223]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9391422112782797
+[Epoch 0, Batch 119] loss: 1.6092194716135662
+[Epoch 0, Batch 179] loss: 1.4757133185863496
+[Epoch 1, Batch 59] loss: 1.3533113718032836
+[Epoch 1, Batch 119] loss: 1.2998409608999888
+[Epoch 1, Batch 179] loss: 1.2296159247557321
+[Epoch 2, Batch 59] loss: 1.1309947182734807
+[Epoch 2, Batch 119] loss: 1.110522488753001
+[Epoch 2, Batch 179] loss: 1.0729423354069392
+--> [train] finish
+--> [test] acc: 0.627
+--> [reward] reward: 0.04290000000000005
+
+-------------------- [[#15 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      2       |      2      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.4931, 0.3949, 0.0359, 0.0537, 0.0224]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9851370811462403
+[Epoch 0, Batch 119] loss: 1.6771705408891042
+[Epoch 0, Batch 179] loss: 1.5142482717831929
+[Epoch 1, Batch 59] loss: 1.4052487810452778
+[Epoch 1, Batch 119] loss: 1.3742161611715953
+[Epoch 1, Batch 179] loss: 1.3160291115442913
+[Epoch 2, Batch 59] loss: 1.235344551006953
+[Epoch 2, Batch 119] loss: 1.1875617702802022
+[Epoch 2, Batch 179] loss: 1.1651441017786661
+--> [train] finish
+--> [test] acc: 0.5957
+--> [reward] reward: 0.011600000000000055
+parameter selected:  3
+action:  0
+--> [learn] controller loss: f0.35533437728881834
+parameter selected:  3
+action:  0
+--> [attention] a_t: tensor([[0.6062, 0.2858, 0.0345, 0.0539, 0.0196]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9451924562454224
+[Epoch 0, Batch 119] loss: 1.6008110503355661
+[Epoch 0, Batch 179] loss: 1.4607544044653575
+[Epoch 1, Batch 59] loss: 1.3646935403347016
+[Epoch 1, Batch 119] loss: 1.2899799009164175
+[Epoch 1, Batch 179] loss: 1.2306276222070058
+[Epoch 2, Batch 59] loss: 1.1299654811620712
+[Epoch 2, Batch 119] loss: 1.1028520196676255
+[Epoch 2, Batch 179] loss: 1.0596819500128427
+--> [train] finish
+--> [test] acc: 0.6018
+
+-------------------- [[#16 iteration]] --------------------
+
+-------------------- [[#16 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    70    |      3       |      5      |      1       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6060, 0.2861, 0.0343, 0.0538, 0.0197]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9241543451944987
+[Epoch 0, Batch 119] loss: 1.5863775372505189
+[Epoch 0, Batch 179] loss: 1.5085540195306142
+[Epoch 1, Batch 59] loss: 1.3690549194812776
+[Epoch 1, Batch 119] loss: 1.3060971478621164
+[Epoch 1, Batch 179] loss: 1.2326203028361002
+[Epoch 2, Batch 59] loss: 1.1559637327988943
+[Epoch 2, Batch 119] loss: 1.1098734378814696
+[Epoch 2, Batch 179] loss: 1.1009591152270635
+--> [train] finish
+--> [test] acc: 0.6064
+--> [reward] reward: 0.0046000000000000485
+
+-------------------- [[#16 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      4       |      5      |      1       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6062, 0.2860, 0.0344, 0.0539, 0.0196]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.998839157819748
+[Epoch 0, Batch 119] loss: 1.6259369154771168
+[Epoch 0, Batch 179] loss: 1.493739871184031
+[Epoch 1, Batch 59] loss: 1.4009494483470917
+[Epoch 1, Batch 119] loss: 1.3197581847508748
+[Epoch 1, Batch 179] loss: 1.2836197078227998
+[Epoch 2, Batch 59] loss: 1.1810665984948476
+[Epoch 2, Batch 119] loss: 1.1596457024415334
+[Epoch 2, Batch 179] loss: 1.111928587158521
+--> [train] finish
+--> [test] acc: 0.608
+--> [reward] reward: 0.006199999999999983
+
+-------------------- [[#16 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      6      |      1       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6065, 0.2856, 0.0345, 0.0538, 0.0196]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9319960316022238
+[Epoch 0, Batch 119] loss: 1.6133979737758637
+[Epoch 0, Batch 179] loss: 1.5163320163885752
+[Epoch 1, Batch 59] loss: 1.3849490384260814
+[Epoch 1, Batch 119] loss: 1.3376007437705995
+[Epoch 1, Batch 179] loss: 1.253366216023763
+[Epoch 2, Batch 59] loss: 1.180617301662763
+[Epoch 2, Batch 119] loss: 1.1080714404582976
+[Epoch 2, Batch 179] loss: 1.102785552541415
+--> [train] finish
+--> [test] acc: 0.6051
+--> [reward] reward: 0.0032999999999999696
+
+-------------------- [[#16 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      1       |      1      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6061, 0.2859, 0.0345, 0.0539, 0.0196]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9497893035411835
+[Epoch 0, Batch 119] loss: 1.6025671501954397
+[Epoch 0, Batch 179] loss: 1.4880050420761108
+[Epoch 1, Batch 59] loss: 1.366515964269638
+[Epoch 1, Batch 119] loss: 1.302588282028834
+[Epoch 1, Batch 179] loss: 1.262446584304174
+[Epoch 2, Batch 59] loss: 1.1718031903107962
+[Epoch 2, Batch 119] loss: 1.1419192562500635
+[Epoch 2, Batch 179] loss: 1.0946325053771337
+--> [train] finish
+--> [test] acc: 0.6107
+--> [reward] reward: 0.008900000000000019
+
+-------------------- [[#16 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      1       |      2      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6065, 0.2859, 0.0343, 0.0537, 0.0196]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.005541855096817
+[Epoch 0, Batch 119] loss: 1.6213491082191467
+[Epoch 0, Batch 179] loss: 1.4908698797225952
+[Epoch 1, Batch 59] loss: 1.3517104069391885
+[Epoch 1, Batch 119] loss: 1.3068218688170115
+[Epoch 1, Batch 179] loss: 1.2385830620924632
+[Epoch 2, Batch 59] loss: 1.1412434925635655
+[Epoch 2, Batch 119] loss: 1.096933094660441
+[Epoch 2, Batch 179] loss: 1.0517454902331034
+--> [train] finish
+--> [test] acc: 0.6254
+--> [reward] reward: 0.023599999999999954
+parameter selected:  4
+action:  1
+--> [learn] controller loss: f0.3633784294128418
+parameter selected:  4
+action:  1
+--> [attention] a_t: tensor([[0.6571, 0.2325, 0.0328, 0.0564, 0.0211]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9834538658459981
+[Epoch 0, Batch 119] loss: 1.6292497634887695
+[Epoch 0, Batch 179] loss: 1.5100042482217153
+[Epoch 1, Batch 59] loss: 1.3977600773175558
+[Epoch 1, Batch 119] loss: 1.3251101354757944
+[Epoch 1, Batch 179] loss: 1.2845878183841706
+[Epoch 2, Batch 59] loss: 1.2009225229422251
+[Epoch 2, Batch 119] loss: 1.1498209476470946
+[Epoch 2, Batch 179] loss: 1.1041041274865468
+--> [train] finish
+--> [test] acc: 0.5809
+
+-------------------- [[#17 iteration]] --------------------
+
+-------------------- [[#17 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    70    |      3       |      5      |      1       |      3      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6566, 0.2334, 0.0326, 0.0562, 0.0213]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.981111208597819
+[Epoch 0, Batch 119] loss: 1.6466450572013855
+[Epoch 0, Batch 179] loss: 1.5323954224586487
+[Epoch 1, Batch 59] loss: 1.4050746023654939
+[Epoch 1, Batch 119] loss: 1.3509454349676768
+[Epoch 1, Batch 179] loss: 1.3038387099901836
+[Epoch 2, Batch 59] loss: 1.2091580986976624
+[Epoch 2, Batch 119] loss: 1.1561777770519257
+[Epoch 2, Batch 179] loss: 1.114381151398023
+--> [train] finish
+--> [test] acc: 0.5837
+--> [reward] reward: 0.0028000000000000247
+
+-------------------- [[#17 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      4       |      5      |      1       |      3      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6570, 0.2329, 0.0326, 0.0564, 0.0211]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.967920031150182
+[Epoch 0, Batch 119] loss: 1.6283842285474142
+[Epoch 0, Batch 179] loss: 1.542153775691986
+[Epoch 1, Batch 59] loss: 1.3962194403012593
+[Epoch 1, Batch 119] loss: 1.3501570026079814
+[Epoch 1, Batch 179] loss: 1.2939538180828094
+[Epoch 2, Batch 59] loss: 1.217800784111023
+[Epoch 2, Batch 119] loss: 1.1657954504092534
+[Epoch 2, Batch 179] loss: 1.1376653224229814
+--> [train] finish
+--> [test] acc: 0.5952
+--> [reward] reward: 0.01429999999999998
+
+-------------------- [[#17 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      6      |      1       |      3      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6573, 0.2322, 0.0329, 0.0565, 0.0210]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9676790316899617
+[Epoch 0, Batch 119] loss: 1.6435016691684723
+[Epoch 0, Batch 179] loss: 1.4989396850268046
+[Epoch 1, Batch 59] loss: 1.3907669544219972
+[Epoch 1, Batch 119] loss: 1.310965931415558
+[Epoch 1, Batch 179] loss: 1.2316484570503234
+[Epoch 2, Batch 59] loss: 1.1601627747217813
+[Epoch 2, Batch 119] loss: 1.1245648046334584
+[Epoch 2, Batch 179] loss: 1.087641421953837
+--> [train] finish
+--> [test] acc: 0.6173
+--> [reward] reward: 0.03639999999999999
+
+-------------------- [[#17 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      1       |      3      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6571, 0.2325, 0.0328, 0.0565, 0.0211]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9791914701461792
+[Epoch 0, Batch 119] loss: 1.6254795710245769
+[Epoch 0, Batch 179] loss: 1.513192633787791
+[Epoch 1, Batch 59] loss: 1.405707879861196
+[Epoch 1, Batch 119] loss: 1.3462445000807444
+[Epoch 1, Batch 179] loss: 1.3089239120483398
+[Epoch 2, Batch 59] loss: 1.1844458202521007
+[Epoch 2, Batch 119] loss: 1.160811706384023
+[Epoch 2, Batch 179] loss: 1.1427302658557892
+--> [train] finish
+--> [test] acc: 0.6066
+--> [reward] reward: 0.025700000000000056
+
+-------------------- [[#17 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      5      |      1       |      4      |
+|   best  |    90    |      3       |      5      |      2       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6568, 0.2332, 0.0325, 0.0563, 0.0212]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0030029515425363
+[Epoch 0, Batch 119] loss: 1.6670160174369812
+[Epoch 0, Batch 179] loss: 1.5472292522589366
+[Epoch 1, Batch 59] loss: 1.437508624792099
+[Epoch 1, Batch 119] loss: 1.3879282315572103
+[Epoch 1, Batch 179] loss: 1.3228242099285126
+[Epoch 2, Batch 59] loss: 1.2428783277670543
+[Epoch 2, Batch 119] loss: 1.2005700826644898
+[Epoch 2, Batch 179] loss: 1.185472410917282
+--> [train] finish
+--> [test] acc: 0.5614
+--> [reward] reward: -0.019499999999999962
+parameter selected:  2
+action:  0
+--> [learn] controller loss: f0.3617316722869873
+parameter selected:  2
+action:  0
+--> [attention] a_t: tensor([[0.6680, 0.2100, 0.0377, 0.0598, 0.0245]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9418030281861622
+[Epoch 0, Batch 119] loss: 1.5953921298185985
+[Epoch 0, Batch 179] loss: 1.479570456345876
+[Epoch 1, Batch 59] loss: 1.3641164640585581
+[Epoch 1, Batch 119] loss: 1.2862553993860881
+[Epoch 1, Batch 179] loss: 1.2338679214318593
+[Epoch 2, Batch 59] loss: 1.1188382774591445
+[Epoch 2, Batch 119] loss: 1.115621825059255
+[Epoch 2, Batch 179] loss: 1.075582320491473
+--> [train] finish
+--> [test] acc: 0.6273
+
+-------------------- [[#18 iteration]] --------------------
+
+-------------------- [[#18 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    70    |      3       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6674, 0.2114, 0.0371, 0.0592, 0.0249]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.959110713005066
+[Epoch 0, Batch 119] loss: 1.6147960523764293
+[Epoch 0, Batch 179] loss: 1.5039488911628722
+[Epoch 1, Batch 59] loss: 1.3680653949578603
+[Epoch 1, Batch 119] loss: 1.336491549015045
+[Epoch 1, Batch 179] loss: 1.2563509047031403
+[Epoch 2, Batch 59] loss: 1.1830528994401297
+[Epoch 2, Batch 119] loss: 1.1418110926946003
+[Epoch 2, Batch 179] loss: 1.1021042813857396
+--> [train] finish
+--> [test] acc: 0.5851
+--> [reward] reward: -0.042200000000000015
+
+-------------------- [[#18 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      4       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6680, 0.2104, 0.0373, 0.0597, 0.0246]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9725290715694428
+[Epoch 0, Batch 119] loss: 1.630909369389216
+[Epoch 0, Batch 179] loss: 1.5016894936561584
+[Epoch 1, Batch 59] loss: 1.4019744873046875
+[Epoch 1, Batch 119] loss: 1.3242098669211069
+[Epoch 1, Batch 179] loss: 1.2809918661912283
+[Epoch 2, Batch 59] loss: 1.1921441415945688
+[Epoch 2, Batch 119] loss: 1.1583796699841817
+[Epoch 2, Batch 179] loss: 1.1277306665976843
+--> [train] finish
+--> [test] acc: 0.5982
+--> [reward] reward: -0.029100000000000015
+
+-------------------- [[#18 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      4      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6685, 0.2094, 0.0379, 0.0597, 0.0245]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9686292946338653
+[Epoch 0, Batch 119] loss: 1.6495957016944884
+[Epoch 0, Batch 179] loss: 1.5117707908153535
+[Epoch 1, Batch 59] loss: 1.4023950239022573
+[Epoch 1, Batch 119] loss: 1.358370457092921
+[Epoch 1, Batch 179] loss: 1.2750934799512228
+[Epoch 2, Batch 59] loss: 1.2203228314717611
+[Epoch 2, Batch 119] loss: 1.1615125040213268
+[Epoch 2, Batch 179] loss: 1.1120883087317148
+--> [train] finish
+--> [test] acc: 0.5861
+--> [reward] reward: -0.041200000000000014
+
+-------------------- [[#18 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6680, 0.2099, 0.0377, 0.0598, 0.0245]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.8968988478183746
+[Epoch 0, Batch 119] loss: 1.5579910119374594
+[Epoch 0, Batch 179] loss: 1.4709681133429209
+[Epoch 1, Batch 59] loss: 1.3459471225738526
+[Epoch 1, Batch 119] loss: 1.2659955779711405
+[Epoch 1, Batch 179] loss: 1.204798944791158
+[Epoch 2, Batch 59] loss: 1.1239729215701422
+[Epoch 2, Batch 119] loss: 1.101801982522011
+[Epoch 2, Batch 179] loss: 1.059074561794599
+--> [train] finish
+--> [test] acc: 0.6238
+--> [reward] reward: -0.0034999999999999476
+
+-------------------- [[#18 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      3      |      1       |      2      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6675, 0.2096, 0.0382, 0.0602, 0.0245]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.968099155028661
+[Epoch 0, Batch 119] loss: 1.6302437484264374
+[Epoch 0, Batch 179] loss: 1.5109494129816692
+[Epoch 1, Batch 59] loss: 1.375845100482305
+[Epoch 1, Batch 119] loss: 1.3085105975468954
+[Epoch 1, Batch 179] loss: 1.2590195616086324
+[Epoch 2, Batch 59] loss: 1.1619468847910563
+[Epoch 2, Batch 119] loss: 1.1164282431205115
+[Epoch 2, Batch 179] loss: 1.119879017273585
+--> [train] finish
+--> [test] acc: 0.6191
+--> [reward] reward: -0.008199999999999985
+parameter selected:  3
+action:  0
+--> [learn] controller loss: f0.35634090900421145
+parameter selected:  3
+action:  0
+--> [attention] a_t: tensor([[0.6509, 0.2029, 0.0464, 0.0719, 0.0279]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9655270477135975
+[Epoch 0, Batch 119] loss: 1.6018987953662873
+[Epoch 0, Batch 179] loss: 1.5157488326231638
+[Epoch 1, Batch 59] loss: 1.3816903750101726
+[Epoch 1, Batch 119] loss: 1.3235591808954874
+[Epoch 1, Batch 179] loss: 1.2459329128265382
+[Epoch 2, Batch 59] loss: 1.148062773545583
+[Epoch 2, Batch 119] loss: 1.1108774493137996
+[Epoch 2, Batch 179] loss: 1.1102475305398305
+--> [train] finish
+--> [test] acc: 0.622
+
+-------------------- [[#19 iteration]] --------------------
+
+-------------------- [[#19 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   110    |      3       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6505, 0.2026, 0.0469, 0.0722, 0.0278]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.942650318145752
+[Epoch 0, Batch 119] loss: 1.6029168824354807
+[Epoch 0, Batch 179] loss: 1.4931304534276326
+[Epoch 1, Batch 59] loss: 1.3497473001480103
+[Epoch 1, Batch 119] loss: 1.2825859546661378
+[Epoch 1, Batch 179] loss: 1.2402576287587483
+[Epoch 2, Batch 59] loss: 1.124847212433815
+[Epoch 2, Batch 119] loss: 1.1082788079977035
+[Epoch 2, Batch 179] loss: 1.0802393794059753
+--> [train] finish
+--> [test] acc: 0.6242
+--> [reward] reward: 0.0021999999999999797
+
+-------------------- [[#19 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      4       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6510, 0.2032, 0.0461, 0.0718, 0.0279]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.002179425954819
+[Epoch 0, Batch 119] loss: 1.6041241188844044
+[Epoch 0, Batch 179] loss: 1.4944825649261475
+[Epoch 1, Batch 59] loss: 1.3913567205270132
+[Epoch 1, Batch 119] loss: 1.3366052985191346
+[Epoch 1, Batch 179] loss: 1.2748741308848064
+[Epoch 2, Batch 59] loss: 1.1968645294507345
+[Epoch 2, Batch 119] loss: 1.1701105465491612
+[Epoch 2, Batch 179] loss: 1.1331658701101939
+--> [train] finish
+--> [test] acc: 0.586
+--> [reward] reward: -0.03600000000000003
+
+-------------------- [[#19 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      2      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6501, 0.2036, 0.0463, 0.0721, 0.0280]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9343302388985952
+[Epoch 0, Batch 119] loss: 1.608466496070226
+[Epoch 0, Batch 179] loss: 1.4890883485476176
+[Epoch 1, Batch 59] loss: 1.3732398708661397
+[Epoch 1, Batch 119] loss: 1.299416587750117
+[Epoch 1, Batch 179] loss: 1.2598108490308126
+[Epoch 2, Batch 59] loss: 1.1741917928059895
+[Epoch 2, Batch 119] loss: 1.1196230361859003
+[Epoch 2, Batch 179] loss: 1.0901152789592743
+--> [train] finish
+--> [test] acc: 0.5982
+--> [reward] reward: -0.023800000000000043
+
+-------------------- [[#19 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6508, 0.2029, 0.0464, 0.0719, 0.0279]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9884222944577534
+[Epoch 0, Batch 119] loss: 1.6553530474503835
+[Epoch 0, Batch 179] loss: 1.5187785943349204
+[Epoch 1, Batch 59] loss: 1.4107908527056376
+[Epoch 1, Batch 119] loss: 1.3514028290907543
+[Epoch 1, Batch 179] loss: 1.304488581418991
+[Epoch 2, Batch 59] loss: 1.2184048473834992
+[Epoch 2, Batch 119] loss: 1.1645071506500244
+[Epoch 2, Batch 179] loss: 1.1625353078047433
+--> [train] finish
+--> [test] acc: 0.5943
+--> [reward] reward: -0.027699999999999947
+
+-------------------- [[#19 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      3      |      1       |      4      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6512, 0.2035, 0.0458, 0.0714, 0.0280]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9926715552806855
+[Epoch 0, Batch 119] loss: 1.6788075745105744
+[Epoch 0, Batch 179] loss: 1.536934459209442
+[Epoch 1, Batch 59] loss: 1.4512871166070302
+[Epoch 1, Batch 119] loss: 1.3844759702682494
+[Epoch 1, Batch 179] loss: 1.3274889230728149
+[Epoch 2, Batch 59] loss: 1.249126923084259
+[Epoch 2, Batch 119] loss: 1.222225691874822
+[Epoch 2, Batch 179] loss: 1.1900932451089223
+--> [train] finish
+--> [test] acc: 0.5885
+--> [reward] reward: -0.033499999999999974
+parameter selected:  0
+action:  1
+--> [learn] controller loss: f0.23764100074768066
+parameter selected:  0
+action:  0
+--> [attention] a_t: tensor([[0.6796, 0.1746, 0.0448, 0.0753, 0.0257]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9653377950191497
+[Epoch 0, Batch 119] loss: 1.6116405387719472
+[Epoch 0, Batch 179] loss: 1.5070975820223491
+[Epoch 1, Batch 59] loss: 1.3679486870765687
+[Epoch 1, Batch 119] loss: 1.3047109564145407
+[Epoch 1, Batch 179] loss: 1.2604407727718354
+[Epoch 2, Batch 59] loss: 1.1692166527112324
+[Epoch 2, Batch 119] loss: 1.142756419380506
+[Epoch 2, Batch 179] loss: 1.1148482978343963
+--> [train] finish
+--> [test] acc: 0.609
+
+-------------------- [[#20 iteration]] --------------------
+
+-------------------- [[#20 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   110    |      3       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6794, 0.1744, 0.0451, 0.0755, 0.0256]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9666384279727935
+[Epoch 0, Batch 119] loss: 1.5984083751837412
+[Epoch 0, Batch 179] loss: 1.5136297384897868
+[Epoch 1, Batch 59] loss: 1.3823518017927805
+[Epoch 1, Batch 119] loss: 1.3313059290250142
+[Epoch 1, Batch 179] loss: 1.2657857616742452
+[Epoch 2, Batch 59] loss: 1.1760753214359283
+[Epoch 2, Batch 119] loss: 1.1245528250932693
+[Epoch 2, Batch 179] loss: 1.0938051472107568
+--> [train] finish
+--> [test] acc: 0.6036
+--> [reward] reward: -0.00539999999999996
+
+-------------------- [[#20 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      2       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6794, 0.1745, 0.0450, 0.0754, 0.0257]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9350233574708302
+[Epoch 0, Batch 119] loss: 1.6161588907241822
+[Epoch 0, Batch 179] loss: 1.501414406299591
+[Epoch 1, Batch 59] loss: 1.3571533540884653
+[Epoch 1, Batch 119] loss: 1.3081252117951712
+[Epoch 1, Batch 179] loss: 1.2611938615640004
+[Epoch 2, Batch 59] loss: 1.147516413529714
+[Epoch 2, Batch 119] loss: 1.1330654978752137
+[Epoch 2, Batch 179] loss: 1.0796437035004298
+--> [train] finish
+--> [test] acc: 0.6089
+--> [reward] reward: -9.999999999998899e-05
+
+-------------------- [[#20 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      2      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6791, 0.1750, 0.0447, 0.0754, 0.0257]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.001261721054713
+[Epoch 0, Batch 119] loss: 1.6426468372344971
+[Epoch 0, Batch 179] loss: 1.5182156880696616
+[Epoch 1, Batch 59] loss: 1.4143205126126608
+[Epoch 1, Batch 119] loss: 1.3554733475049336
+[Epoch 1, Batch 179] loss: 1.2868148783842723
+[Epoch 2, Batch 59] loss: 1.193374651670456
+[Epoch 2, Batch 119] loss: 1.1513585329055787
+[Epoch 2, Batch 179] loss: 1.1309502184391023
+--> [train] finish
+--> [test] acc: 0.5776
+--> [reward] reward: -0.031399999999999983
+
+-------------------- [[#20 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6796, 0.1746, 0.0448, 0.0753, 0.0257]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9647453705469766
+[Epoch 0, Batch 119] loss: 1.6102319916089376
+[Epoch 0, Batch 179] loss: 1.4873966058095296
+[Epoch 1, Batch 59] loss: 1.3705423295497894
+[Epoch 1, Batch 119] loss: 1.3321013589700064
+[Epoch 1, Batch 179] loss: 1.2510556916395823
+[Epoch 2, Batch 59] loss: 1.1726676245530447
+[Epoch 2, Batch 119] loss: 1.1234571625789007
+[Epoch 2, Batch 179] loss: 1.1109601040681203
+--> [train] finish
+--> [test] acc: 0.6132
+--> [reward] reward: 0.0041999999999999815
+
+-------------------- [[#20 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      3      |      1       |      2      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6789, 0.1746, 0.0452, 0.0757, 0.0257]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9668879250685374
+[Epoch 0, Batch 119] loss: 1.607583212852478
+[Epoch 0, Batch 179] loss: 1.5045144021511079
+[Epoch 1, Batch 59] loss: 1.3795522550741832
+[Epoch 1, Batch 119] loss: 1.3321702619393667
+[Epoch 1, Batch 179] loss: 1.2734369397163392
+[Epoch 2, Batch 59] loss: 1.1763389527797699
+[Epoch 2, Batch 119] loss: 1.1423974633216858
+[Epoch 2, Batch 179] loss: 1.1155996719996135
+--> [train] finish
+--> [test] acc: 0.6073
+--> [reward] reward: -0.0017000000000000348
+parameter selected:  3
+action:  0
+--> [learn] controller loss: f0.35339670181274413
+parameter selected:  3
+action:  0
+--> [attention] a_t: tensor([[0.7014, 0.1505, 0.0409, 0.0844, 0.0228]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9443240145842233
+[Epoch 0, Batch 119] loss: 1.6125386039415994
+[Epoch 0, Batch 179] loss: 1.4873534639676411
+[Epoch 1, Batch 59] loss: 1.3654527445634206
+[Epoch 1, Batch 119] loss: 1.3219806849956512
+[Epoch 1, Batch 179] loss: 1.231630762418111
+[Epoch 2, Batch 59] loss: 1.1496155977249145
+[Epoch 2, Batch 119] loss: 1.1226762135823567
+[Epoch 2, Batch 179] loss: 1.0766242186228434
+--> [train] finish
+--> [test] acc: 0.6196
+
+-------------------- [[#21 iteration]] --------------------
+
+-------------------- [[#21 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   110    |      3       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.7013, 0.1503, 0.0411, 0.0845, 0.0228]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.901573638121287
+[Epoch 0, Batch 119] loss: 1.5862656116485596
+[Epoch 0, Batch 179] loss: 1.4809080461661022
+[Epoch 1, Batch 59] loss: 1.363295058409373
+[Epoch 1, Batch 119] loss: 1.2807490448156993
+[Epoch 1, Batch 179] loss: 1.238288903236389
+[Epoch 2, Batch 59] loss: 1.141849332054456
+[Epoch 2, Batch 119] loss: 1.1123883038759232
+[Epoch 2, Batch 179] loss: 1.0715565750996272
+--> [train] finish
+--> [test] acc: 0.6042
+--> [reward] reward: -0.01540000000000008
+
+-------------------- [[#21 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      2       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.7013, 0.1504, 0.0411, 0.0844, 0.0228]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9319530367851256
+[Epoch 0, Batch 119] loss: 1.6170446654160817
+[Epoch 0, Batch 179] loss: 1.4965737879276275
+[Epoch 1, Batch 59] loss: 1.4009950935840607
+[Epoch 1, Batch 119] loss: 1.3384841402371725
+[Epoch 1, Batch 179] loss: 1.270445360740026
+[Epoch 2, Batch 59] loss: 1.1708825180927913
+[Epoch 2, Batch 119] loss: 1.1383320252100626
+[Epoch 2, Batch 179] loss: 1.102505792180697
+--> [train] finish
+--> [test] acc: 0.6056
+--> [reward] reward: -0.014000000000000012
+
+-------------------- [[#21 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      2      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.7010, 0.1508, 0.0409, 0.0845, 0.0228]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.952978754043579
+[Epoch 0, Batch 119] loss: 1.6288205285867055
+[Epoch 0, Batch 179] loss: 1.5192337135473888
+[Epoch 1, Batch 59] loss: 1.3876210669676463
+[Epoch 1, Batch 119] loss: 1.3299265364805857
+[Epoch 1, Batch 179] loss: 1.2760920226573944
+[Epoch 2, Batch 59] loss: 1.1866159121195474
+[Epoch 2, Batch 119] loss: 1.151630320151647
+[Epoch 2, Batch 179] loss: 1.1253552297751108
+--> [train] finish
+--> [test] acc: 0.6035
+--> [reward] reward: -0.016100000000000003
+
+-------------------- [[#21 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      3      |      2       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.7016, 0.1507, 0.0407, 0.0842, 0.0228]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.963119641939799
+[Epoch 0, Batch 119] loss: 1.6408539513746898
+[Epoch 0, Batch 179] loss: 1.528454891840617
+[Epoch 1, Batch 59] loss: 1.410492511590322
+[Epoch 1, Batch 119] loss: 1.3524857799212138
+[Epoch 1, Batch 179] loss: 1.2755478938420615
+[Epoch 2, Batch 59] loss: 1.1921825766563416
+[Epoch 2, Batch 119] loss: 1.163761247197787
+[Epoch 2, Batch 179] loss: 1.1386833717425664
+--> [train] finish
+--> [test] acc: 0.602
+--> [reward] reward: -0.01760000000000006
+
+-------------------- [[#21 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      3       |      3      |      1       |      2      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.7008, 0.1505, 0.0412, 0.0847, 0.0228]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0174937228361767
+[Epoch 0, Batch 119] loss: 1.6416066984335582
+[Epoch 0, Batch 179] loss: 1.5091933806737263
+[Epoch 1, Batch 59] loss: 1.4309935092926025
+[Epoch 1, Batch 119] loss: 1.3558815797170003
+[Epoch 1, Batch 179] loss: 1.299800690015157
+[Epoch 2, Batch 59] loss: 1.2263234198093413
+[Epoch 2, Batch 119] loss: 1.1881909986337027
+[Epoch 2, Batch 179] loss: 1.1614350875218709
+--> [train] finish
+--> [test] acc: 0.6014
+--> [reward] reward: -0.018199999999999994
+parameter selected:  1
+action:  0
+--> [learn] controller loss: f0.3390014171600342
+parameter selected:  1
+action:  0
+--> [attention] a_t: tensor([[0.6717, 0.1614, 0.0413, 0.1032, 0.0224]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.948090708255768
+[Epoch 0, Batch 119] loss: 1.5893267234166464
+[Epoch 0, Batch 179] loss: 1.487994792064031
+[Epoch 1, Batch 59] loss: 1.3881099581718446
+[Epoch 1, Batch 119] loss: 1.3034389475981394
+[Epoch 1, Batch 179] loss: 1.259536470969518
+[Epoch 2, Batch 59] loss: 1.1614079038302103
+[Epoch 2, Batch 119] loss: 1.1300334910551706
+[Epoch 2, Batch 179] loss: 1.0720196823279062
+--> [train] finish
+--> [test] acc: 0.6095
+
+-------------------- [[#22 iteration]] --------------------
+
+-------------------- [[#22 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   110    |      1       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6712, 0.1614, 0.0415, 0.1035, 0.0224]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9096884330113728
+[Epoch 0, Batch 119] loss: 1.583662478129069
+[Epoch 0, Batch 179] loss: 1.4909631530443828
+[Epoch 1, Batch 59] loss: 1.35290318330129
+[Epoch 1, Batch 119] loss: 1.2959119081497192
+[Epoch 1, Batch 179] loss: 1.2318809092044831
+[Epoch 2, Batch 59] loss: 1.136416451136271
+[Epoch 2, Batch 119] loss: 1.1047923992077509
+[Epoch 2, Batch 179] loss: 1.0644910087188084
+--> [train] finish
+--> [test] acc: 0.6133
+--> [reward] reward: 0.0037999999999999146
+
+-------------------- [[#22 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      1       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6717, 0.1614, 0.0413, 0.1032, 0.0224]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9578752199808755
+[Epoch 0, Batch 119] loss: 1.5938761512438455
+[Epoch 0, Batch 179] loss: 1.48189288576444
+[Epoch 1, Batch 59] loss: 1.3870844304561616
+[Epoch 1, Batch 119] loss: 1.317978835105896
+[Epoch 1, Batch 179] loss: 1.2568337202072144
+[Epoch 2, Batch 59] loss: 1.1633873303731284
+[Epoch 2, Batch 119] loss: 1.1601925214131674
+[Epoch 2, Batch 179] loss: 1.1182492792606353
+--> [train] finish
+--> [test] acc: 0.6072
+--> [reward] reward: -0.0023000000000000798
+
+-------------------- [[#22 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      1       |      2      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6708, 0.1617, 0.0415, 0.1036, 0.0225]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9063946604728699
+[Epoch 0, Batch 119] loss: 1.5884893159071605
+[Epoch 0, Batch 179] loss: 1.4781227946281432
+[Epoch 1, Batch 59] loss: 1.355126565694809
+[Epoch 1, Batch 119] loss: 1.315844291448593
+[Epoch 1, Batch 179] loss: 1.2646069347858429
+[Epoch 2, Batch 59] loss: 1.154230425755183
+[Epoch 2, Batch 119] loss: 1.1139651517073312
+[Epoch 2, Batch 179] loss: 1.088406538963318
+--> [train] finish
+--> [test] acc: 0.62
+--> [reward] reward: 0.010499999999999954
+
+-------------------- [[#22 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      1       |      3      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6717, 0.1614, 0.0413, 0.1032, 0.0224]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.974556577205658
+[Epoch 0, Batch 119] loss: 1.63466673096021
+[Epoch 0, Batch 179] loss: 1.5094808081785838
+[Epoch 1, Batch 59] loss: 1.4145832300186156
+[Epoch 1, Batch 119] loss: 1.3363230665524801
+[Epoch 1, Batch 179] loss: 1.288993885119756
+[Epoch 2, Batch 59] loss: 1.192166405916214
+[Epoch 2, Batch 119] loss: 1.1594359715779623
+[Epoch 2, Batch 179] loss: 1.1199516812960306
+--> [train] finish
+--> [test] acc: 0.6001
+--> [reward] reward: -0.009400000000000075
+
+-------------------- [[#22 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      1       |      3      |      1       |      2      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6704, 0.1617, 0.0417, 0.1038, 0.0224]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9499532103538513
+[Epoch 0, Batch 119] loss: 1.5913147747516632
+[Epoch 0, Batch 179] loss: 1.4940413177013396
+[Epoch 1, Batch 59] loss: 1.410399427016576
+[Epoch 1, Batch 119] loss: 1.326141240199407
+[Epoch 1, Batch 179] loss: 1.2925477107365926
+[Epoch 2, Batch 59] loss: 1.1967239061991373
+[Epoch 2, Batch 119] loss: 1.1487581253051757
+[Epoch 2, Batch 179] loss: 1.1308040062586466
+--> [train] finish
+--> [test] acc: 0.5982
+--> [reward] reward: -0.011300000000000088
+parameter selected:  2
+action:  0
+--> [learn] controller loss: f0.35993711948394774
+parameter selected:  2
+action:  0
+--> [attention] a_t: tensor([[0.6143, 0.1863, 0.0526, 0.1236, 0.0233]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9174947917461396
+[Epoch 0, Batch 119] loss: 1.5623883843421935
+[Epoch 0, Batch 179] loss: 1.458194257815679
+[Epoch 1, Batch 59] loss: 1.344952267408371
+[Epoch 1, Batch 119] loss: 1.293182224035263
+[Epoch 1, Batch 179] loss: 1.2457927862803142
+[Epoch 2, Batch 59] loss: 1.1405671368042627
+[Epoch 2, Batch 119] loss: 1.1090412457784018
+[Epoch 2, Batch 179] loss: 1.089672084649404
+--> [train] finish
+--> [test] acc: 0.6059
+
+-------------------- [[#23 iteration]] --------------------
+
+-------------------- [[#23 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   110    |      1       |      1      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6107, 0.1868, 0.0538, 0.1253, 0.0233]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9315737346808115
+[Epoch 0, Batch 119] loss: 1.5692229986190795
+[Epoch 0, Batch 179] loss: 1.4684990366299948
+[Epoch 1, Batch 59] loss: 1.333854083220164
+[Epoch 1, Batch 119] loss: 1.2604822933673858
+[Epoch 1, Batch 179] loss: 1.2320758879184723
+[Epoch 2, Batch 59] loss: 1.1187503695487977
+[Epoch 2, Batch 119] loss: 1.0922508656978607
+[Epoch 2, Batch 179] loss: 1.0843799789746602
+--> [train] finish
+--> [test] acc: 0.6187
+--> [reward] reward: 0.012800000000000034
+
+-------------------- [[#23 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      2       |      1      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6156, 0.1862, 0.0520, 0.1229, 0.0233]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9624111950397491
+[Epoch 0, Batch 119] loss: 1.6264522890249888
+[Epoch 0, Batch 179] loss: 1.4842140654722848
+[Epoch 1, Batch 59] loss: 1.3631111959616342
+[Epoch 1, Batch 119] loss: 1.2950719316800436
+[Epoch 1, Batch 179] loss: 1.2538048803806305
+[Epoch 2, Batch 59] loss: 1.159339314699173
+[Epoch 2, Batch 119] loss: 1.1190778891245523
+[Epoch 2, Batch 179] loss: 1.0949284334977467
+--> [train] finish
+--> [test] acc: 0.6046
+--> [reward] reward: -0.0012999999999999678
+
+-------------------- [[#23 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      1       |      1      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6140, 0.1864, 0.0526, 0.1237, 0.0233]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9413522402445476
+[Epoch 0, Batch 119] loss: 1.5843057096004487
+[Epoch 0, Batch 179] loss: 1.4550580958525339
+[Epoch 1, Batch 59] loss: 1.3655203898747763
+[Epoch 1, Batch 119] loss: 1.314681077003479
+[Epoch 1, Batch 179] loss: 1.2491458475589752
+[Epoch 2, Batch 59] loss: 1.1626487612724303
+[Epoch 2, Batch 119] loss: 1.1383833726247152
+[Epoch 2, Batch 179] loss: 1.1089031845331192
+--> [train] finish
+--> [test] acc: 0.6041
+--> [reward] reward: -0.0018000000000000238
+
+-------------------- [[#23 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      1       |      1      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6140, 0.1864, 0.0526, 0.1237, 0.0233]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9165625075499217
+[Epoch 0, Batch 119] loss: 1.5680240293343861
+[Epoch 0, Batch 179] loss: 1.476214098930359
+[Epoch 1, Batch 59] loss: 1.3548185229301453
+[Epoch 1, Batch 119] loss: 1.2775450686613719
+[Epoch 1, Batch 179] loss: 1.2452551305294037
+[Epoch 2, Batch 59] loss: 1.1641639530658723
+[Epoch 2, Batch 119] loss: 1.1128186762332917
+[Epoch 2, Batch 179] loss: 1.0663829823335012
+--> [train] finish
+--> [test] acc: 0.6146
+--> [reward] reward: 0.008700000000000041
+
+-------------------- [[#23 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    90    |      1       |      1      |      1       |      2      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6086, 0.1874, 0.0544, 0.1263, 0.0234]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9257770438989004
+[Epoch 0, Batch 119] loss: 1.5820910215377808
+[Epoch 0, Batch 179] loss: 1.4710106869538626
+[Epoch 1, Batch 59] loss: 1.339944412310918
+[Epoch 1, Batch 119] loss: 1.2747671604156494
+[Epoch 1, Batch 179] loss: 1.229590262969335
+[Epoch 2, Batch 59] loss: 1.1157617181539536
+[Epoch 2, Batch 119] loss: 1.0905961006879807
+[Epoch 2, Batch 179] loss: 1.0699350883563359
+--> [train] finish
+--> [test] acc: 0.6173
+--> [reward] reward: 0.011399999999999966
+parameter selected:  0
+action:  1
+--> [learn] controller loss: f0.24505858421325682
+parameter selected:  0
+action:  1
+--> [attention] a_t: tensor([[0.6322, 0.1785, 0.0552, 0.1135, 0.0206]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9404390454292297
+[Epoch 0, Batch 119] loss: 1.5717808127403259
+[Epoch 0, Batch 179] loss: 1.457376277446747
+[Epoch 1, Batch 59] loss: 1.3364130914211274
+[Epoch 1, Batch 119] loss: 1.2876115401585897
+[Epoch 1, Batch 179] loss: 1.2185032983620963
+[Epoch 2, Batch 59] loss: 1.1329896847407024
+[Epoch 2, Batch 119] loss: 1.1135073810815812
+[Epoch 2, Batch 179] loss: 1.0630884180466333
+--> [train] finish
+--> [test] acc: 0.5995
+
+-------------------- [[#24 iteration]] --------------------
+
+-------------------- [[#24 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   150    |      1       |      1      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6316, 0.1786, 0.0554, 0.1137, 0.0206]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9354923645655313
+[Epoch 0, Batch 119] loss: 1.5729329506556193
+[Epoch 0, Batch 179] loss: 1.4472216963768005
+[Epoch 1, Batch 59] loss: 1.3492715239524842
+[Epoch 1, Batch 119] loss: 1.262327289581299
+[Epoch 1, Batch 179] loss: 1.1968989928563436
+[Epoch 2, Batch 59] loss: 1.113918168346087
+[Epoch 2, Batch 119] loss: 1.0699931720892588
+[Epoch 2, Batch 179] loss: 1.0596622596184413
+--> [train] finish
+--> [test] acc: 0.63
+--> [reward] reward: 0.03049999999999997
+
+-------------------- [[#24 iteration (param #1)]] --------------------
+parameter selected:  1
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   130    |      2       |      1      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6333, 0.1783, 0.0548, 0.1130, 0.0206]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9562758962313334
+[Epoch 0, Batch 119] loss: 1.608419015010198
+[Epoch 0, Batch 179] loss: 1.5022803246974945
+[Epoch 1, Batch 59] loss: 1.3640576521555583
+[Epoch 1, Batch 119] loss: 1.3177585005760193
+[Epoch 1, Batch 179] loss: 1.2331015070279439
+[Epoch 2, Batch 59] loss: 1.1311637202898661
+[Epoch 2, Batch 119] loss: 1.123483145236969
+[Epoch 2, Batch 179] loss: 1.0747704257567723
+--> [train] finish
+--> [test] acc: 0.6125
+--> [reward] reward: 0.013000000000000012
+
+-------------------- [[#24 iteration (param #2)]] --------------------
+parameter selected:  2
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   130    |      1       |      2      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6339, 0.1781, 0.0547, 0.1127, 0.0206]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9491566995779672
+[Epoch 0, Batch 119] loss: 1.580929793914159
+[Epoch 0, Batch 179] loss: 1.46505117615064
+[Epoch 1, Batch 59] loss: 1.3409993688265482
+[Epoch 1, Batch 119] loss: 1.2882743716239928
+[Epoch 1, Batch 179] loss: 1.2312954465548198
+[Epoch 2, Batch 59] loss: 1.1282850484053293
+[Epoch 2, Batch 119] loss: 1.093894225358963
+[Epoch 2, Batch 179] loss: 1.0577600767215094
+--> [train] finish
+--> [test] acc: 0.623
+--> [reward] reward: 0.023499999999999965
+
+-------------------- [[#24 iteration (param #3)]] --------------------
+parameter selected:  3
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   130    |      1       |      1      |      1       |      3      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6324, 0.1785, 0.0551, 0.1134, 0.0206]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.9436258276303608
+[Epoch 0, Batch 119] loss: 1.5653227289517722
+[Epoch 0, Batch 179] loss: 1.4472041765848795
+[Epoch 1, Batch 59] loss: 1.3360478242238363
+[Epoch 1, Batch 119] loss: 1.3038564542929332
+[Epoch 1, Batch 179] loss: 1.2330247938632966
+[Epoch 2, Batch 59] loss: 1.1190990338722864
+[Epoch 2, Batch 119] loss: 1.0997007548809052
+[Epoch 2, Batch 179] loss: 1.0807903190453847
+--> [train] finish
+--> [test] acc: 0.6217
+--> [reward] reward: 0.022199999999999998
+
+-------------------- [[#24 iteration (param #4)]] --------------------
+parameter selected:  4
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   130    |      1       |      1      |      1       |      2      |
+|   best  |    90    |      3       |      3      |      1       |      3      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6293, 0.1791, 0.0561, 0.1148, 0.0207]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.8820764025052388
+[Epoch 0, Batch 119] loss: 1.5495140949885051
+[Epoch 0, Batch 179] loss: 1.410756560166677
+[Epoch 1, Batch 59] loss: 1.290089346965154
+[Epoch 1, Batch 119] loss: 1.2330044011274974
+[Epoch 1, Batch 179] loss: 1.1368648409843445
+[Epoch 2, Batch 59] loss: 1.0524787833293279
+[Epoch 2, Batch 119] loss: 1.0260205934445064
+[Epoch 2, Batch 179] loss: 1.0029872288306554
+--> [train] finish
+--> [test] acc: 0.6393
+--> [reward] reward: 0.03979999999999995
+parameter selected:  4
+action:  0
+--> [learn] controller loss: f0.36310725212097167
+parameter selected:  4
+action:  0
+--> [attention] a_t: tensor([[0.6608, 0.1648, 0.0532, 0.1000, 0.0211]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.902219867706299
+[Epoch 0, Batch 119] loss: 1.5338676869869232
+[Epoch 0, Batch 179] loss: 1.4103932241598764
+[Epoch 1, Batch 59] loss: 1.2773833870887756
+[Epoch 1, Batch 119] loss: 1.1939153373241425
+[Epoch 1, Batch 179] loss: 1.162964940071106
+[Epoch 2, Batch 59] loss: 1.019190675020218
+[Epoch 2, Batch 119] loss: 0.9839301347732544
+[Epoch 2, Batch 179] loss: 0.9740778078635534
+--> [train] finish
+--> [test] acc: 0.6521
+
+-------------------- [[#25 iteration]] --------------------
+
+-------------------- [[#25 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |   150    |      1       |      1      |      1       |      1      |
+|   best  |   130    |      1       |      1      |      1       |      1      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.6611, 0.1647, 0.0531, 0.0999, 0.0211]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 1.8714386204878488
+[Epoch 0, Batch 119] loss: 1.5135117451349893
+Traceback (most recent call last):
+  File "/home/tanglizi/tmp/hypersea/main.py", line 198, in <module>
+    main()
+  File "/home/tanglizi/tmp/hypersea/main.py", line 40, in main
+    iterate(train_loader, test_loader)
+  File "/home/tanglizi/tmp/hypersea/main.py", line 65, in iterate
+    model = train_cnn(train_loader)
+  File "/home/tanglizi/tmp/hypersea/main.py", line 168, in train_cnn
+    totalLoss += loss.item()
+KeyboardInterrupt
