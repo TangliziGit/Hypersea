@@ -1,24 +1,37 @@
+import time
+
 from prettytable import PrettyTable
 
 from config import Config
 
 
 class Logger:
-    prefix = '-->'
-    iteration = '-' * 20
+    _filename = f"log/{time.strftime('%Y-%m-%d_%H:%M:%S', time.localtime(time.time()))}.log"
+    _file = open(_filename, 'w')
+
+    _prefix = '-->'
+    _iteration = '-' * 20
 
     @staticmethod
-    def iteration_start(it):
-        print("")
-        print(f"{Logger.iteration} [[#{it} iteration]] {Logger.iteration}")
+    def iteration_start(it, content = None):
+        Logger.print("")
+        if content is None:
+            Logger.print(f"{Logger._iteration} [[#{it} iteration]] {Logger._iteration}")
+        else:
+            Logger.print(f"{Logger._iteration} [[#{it} iteration ({content})]] {Logger._iteration}")
 
     @staticmethod
     def stage(name, content=""):
-        print(f"{Logger.prefix} [{name}] {content}")
+        Logger.print(f"{Logger._prefix} [{name}] {content}")
 
     @staticmethod
     def print(*content):
-        print(*content)
+        content = [str(x) for x in content]
+        content = ' '.join(content)
+
+        print(content)
+        Logger._file.write(content + '\n')
+        Logger._file.flush()
 
     @staticmethod
     def show_params():
@@ -36,5 +49,5 @@ class Logger:
                        Config.worst_filter_height, Config.worst_filter_width,
                        Config.worst_stride_height, Config.worst_stride_width])
 
-        print(table)
-        print("")
+        Logger.print(str(table))
+        Logger.print("")
