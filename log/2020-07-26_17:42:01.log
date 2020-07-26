@@ -1,0 +1,69 @@
+
+-------------------- [[#0 iteration]] --------------------
+
+-------------------- [[#0 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  1
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    30    |      3       |      5      |      2       |      1      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.2814, 0.1418, 0.1509, 0.2289, 0.1969]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.0205079853534698
+[Epoch 0, Batch 119] loss: 1.7667204936345418
+[Epoch 0, Batch 179] loss: 1.7054377257823945
+[Epoch 0, Batch 239] loss: 1.6251794258753458
+[Epoch 0, Batch 299] loss: 1.6295759816964468
+[Epoch 0, Batch 359] loss: 1.5718495190143584
+[Epoch 1, Batch 59] loss: 1.5116401473681131
+[Epoch 1, Batch 119] loss: 1.4667228976885478
+[Epoch 1, Batch 179] loss: 1.46433687210083
+[Epoch 1, Batch 239] loss: 1.4441616555054984
+[Epoch 1, Batch 299] loss: 1.454068507750829
+[Epoch 1, Batch 359] loss: 1.4364286621411642
+[Epoch 2, Batch 59] loss: 1.375467159350713
+[Epoch 2, Batch 119] loss: 1.3694422662258148
+[Epoch 2, Batch 179] loss: 1.372880180676778
+[Epoch 2, Batch 239] loss: 1.3574744681517283
+[Epoch 2, Batch 299] loss: 1.360275117556254
+[Epoch 2, Batch 359] loss: 1.3270278414090475
+[Epoch 3, Batch 59] loss: 1.310292762517929
+[Epoch 3, Batch 119] loss: 1.2893831034501393
+[Epoch 3, Batch 179] loss: 1.2742694934209189
+[Epoch 3, Batch 239] loss: 1.3195318182309468
+[Epoch 3, Batch 299] loss: 1.2796813706556955
+[Epoch 3, Batch 359] loss: 1.2812668641408285
+[Epoch 4, Batch 59] loss: 1.2298495729764303
+[Epoch 4, Batch 119] loss: 1.2419451594352722
+[Epoch 4, Batch 179] loss: 1.227495398124059
+[Epoch 4, Batch 239] loss: 1.244115549325943
+[Epoch 4, Batch 299] loss: 1.2320046027501423
+[Epoch 4, Batch 359] loss: 1.2353119283914566
+[Epoch 5, Batch 59] loss: 1.1913300931453705
+[Epoch 5, Batch 119] loss: 1.2021430750687918
+[Epoch 5, Batch 179] loss: 1.1875228226184844
+[Epoch 5, Batch 239] loss: 1.1921392639478048
+[Epoch 5, Batch 299] loss: 1.1766144980986912
+[Epoch 5, Batch 359] loss: 1.2007661551237105
+[Epoch 6, Batch 59] loss: 1.1468200693527857
+[Epoch 6, Batch 119] loss: 1.1472513417402903
+[Epoch 6, Batch 179] loss: 1.1594166904687881
+[Epoch 6, Batch 239] loss: 1.1645769943793616
+[Epoch 6, Batch 299] loss: 1.1513755708932876
+[Epoch 6, Batch 359] loss: 1.1675400853157043
+[Epoch 7, Batch 59] loss: 1.1458582699298858
+[Epoch 7, Batch 119] loss: 1.1061756322781244
+[Epoch 7, Batch 179] loss: 1.1193637559811274
+[Epoch 7, Batch 239] loss: 1.1136062035957972
+[Epoch 7, Batch 299] loss: 1.1156847298145294
+[Epoch 7, Batch 359] loss: 1.1222598900397618
+[Epoch 8, Batch 59] loss: 1.078123614192009
+[Epoch 8, Batch 119] loss: 1.0900845358769098
+[Epoch 8, Batch 179] loss: 1.1173144668340682
+[Epoch 8, Batch 239] loss: 1.0728842665751774

@@ -10,11 +10,11 @@ class QTables:
         self.enable_learn = True
 
         # 初始化每个参数的状态空间
-        self.RL_of_filter = QStatus(10, 20, 0, 0)
-        self.RL_filter_height = QStatus(3, 1, 15, 1)
-        self.RL_filter_width = QStatus(5, 1, 25, 1)
-        self.RL_stride_height = QStatus(2, 1, 0, 0)
-        self.RL_stride_width = QStatus(1, 1, 0, 0)
+        self.RL_of_filter = QStatus(Config.of_filter, 32, 0, 0)
+        self.RL_filter_height = QStatus(Config.filter_height, 1, 10, 1)
+        self.RL_filter_width = QStatus(Config.filter_width, 1, 10, 1)
+        self.RL_stride_height = QStatus(Config.stride_height, 1, 0, 0)
+        self.RL_stride_width = QStatus(Config.stride_width, 1, 0, 0)
 
         # 对每个状态空间初始化Q表
         self.RL_table_of_filter = QLearningTable(actions=list(range(self.RL_of_filter.n_actions)))

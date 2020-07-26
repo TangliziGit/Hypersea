@@ -2,7 +2,7 @@ import torch
 
 
 class Config:
-    N_RANGE = 3
+    N_RANGE = 75
 
     config_bak = {}
 
@@ -17,7 +17,8 @@ class Config:
     init_accuracy = 0.5
     reward = 0.00
 
-    of_filter = 10
+    # VGG3: [512, 2, 2, 1, 1]
+    of_filter = 512
     filter_height = 3
     filter_width = 5
     stride_height = 2

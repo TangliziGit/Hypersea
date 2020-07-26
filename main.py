@@ -33,9 +33,9 @@ def main():
     ])
 
     train_set = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
-    train_loader = torch.utils.data.DataLoader(train_set, batch_size=256, shuffle=True, num_workers=2)
+    train_loader = torch.utils.data.DataLoader(train_set, batch_size=128, shuffle=True, num_workers=2)
     test_set = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)
-    test_loader = torch.utils.data.DataLoader(test_set, batch_size=256, shuffle=False, num_workers=2)
+    test_loader = torch.utils.data.DataLoader(test_set, batch_size=128, shuffle=False, num_workers=2)
 
     iterate(train_loader, test_loader)
 
@@ -43,7 +43,6 @@ def main():
 
 
 def iterate(train_loader, test_loader):
-
     i = 0
     while Config.last_accuracy <= 0.80:
         Logger.iteration_start(i)
@@ -62,7 +61,7 @@ def iterate(train_loader, test_loader):
             Logger.show_params()
 
             # 训练&获取&测试模型
-            model = train_cnn(train_loader)
+            model = train_cnn(train_loader, test_loader)
             accuracy = test_cnn(model, test_loader)
             reward = accuracy - Config.last_accuracy
 
@@ -106,13 +105,13 @@ def iterate(train_loader, test_loader):
 
 
 def learn(obs, nobs, actions, rewards, a_ts):
-
     for param_id, (ob, nob, action, reward) in enumerate(zip(obs, nobs, actions, rewards)):
         q_tables.learn(reward, ob, action, nob, param_id)
 
     # TODO: consider rewards are all negative
     best_param_id = np.argmax(rewards)
-    a_t_label = torch.autograd.Variable(torch.LongTensor([best_param_id]).to(device)) # torch.FloatTensor([np.eye(5)[np.argmax(rewards)]])
+    a_t_label = torch.autograd.Variable(
+        torch.LongTensor([best_param_id]).to(device))  # torch.FloatTensor([np.eye(5)[np.argmax(rewards)]])
 
     sum_loss = 0
     for a_t in a_ts:
@@ -137,7 +136,7 @@ def learn(obs, nobs, actions, rewards, a_ts):
     Logger.stage('learn', f"controller loss: f{loss.item() / len(a_ts)}")
 
 
-def train_cnn(train_loader):
+def train_cnn(train_loader, test_loader):
     # 根据刚才更新的参数，初始化模型
     cnn = CnnModel.from_config(3).to(device)
 
@@ -169,16 +168,17 @@ def train_cnn(train_loader):
             losses[-1].append(loss.item())
 
             if (i + 1) % log_interval == 0:
-                Logger.print(f'[Epoch {epoch}, Batch {i}] loss: {totalLoss / log_interval}')
+                acc = test_cnn(cnn, test_loader, log=False)
+                Logger.print(f'[Epoch {epoch}, Batch {i}] loss: {totalLoss / log_interval} acc: {acc}')
                 totalLoss = .0
+                pkl.dump(losses, open('pkl/losses.pkl', 'wb'))
 
     Logger.stage('train', 'finish')
-    pkl.dump(losses, open('pkl/losses.pkl', 'wb'))
     torch.save(cnn, 'pkl/model.pkl')
     return cnn
 
 
-def test_cnn(model, test_loader):
+def test_cnn(model, test_loader, log=True):
     correct, total = .0, .0
     testData = iter(test_loader)
     with torch.no_grad():
@@ -190,7 +190,8 @@ def test_cnn(model, test_loader):
             correct += (predicted == labels).sum().item()
 
     accuracy = correct / total
-    Logger.stage('test', f"acc: {accuracy}")
+    if log:
+        Logger.stage('test', f"acc: {accuracy}")
     return accuracy
 
 

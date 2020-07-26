@@ -27,23 +27,32 @@ class CnnModel(nn.Module):
         self.stride_width = stride_width
 
         self.layer = nn.Sequential(
-            nn.Conv2d(in_dim, 130, kernel_size=(3, 5), stride=(1, 1)),
-            nn.ReLU(inplace=True),
-            nn.Conv2d(130, 270, kernel_size=(4, 5), stride=(2, 1)),
-            nn.ReLU(inplace=True),
-            nn.Conv2d(270, out_dim, kernel_size=(filter_height, filter_width), stride=(stride_height, stride_width)),
-            nn.ReLU(inplace=True),
-            nn.MaxPool2d((2, 2), stride=(2, 2))
+            nn.Conv2d(in_dim, 64, kernel_size=2, padding=1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size=2, stride=2),
+
+            nn.Conv2d(64, 256, kernel_size=2, padding=1),
+            nn.BatchNorm2d(256),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size=2, stride=2),
+
+            nn.Conv2d(256, out_dim, kernel_size=(filter_height, filter_width), stride=(stride_height, stride_width)),
+            nn.BatchNorm2d(out_dim),
+            nn.ReLU(True),
+            nn.MaxPool2d(kernel_size=2, stride=2),
         )
 
+        height = ((8 - filter_height) // stride_height + 1) // 2
+        width = ((8 - filter_width) // stride_width + 1) // 2
         self.fc = nn.Sequential(
-            nn.Linear(out_dim * int(((14 - filter_height) / stride_height + 1) / 2) *
-                      int(((24 - filter_width) / stride_width + 1) / 2), 256),
-            nn.ReLU(inplace=True),
-            nn.Dropout(p=0.5),
-            nn.Linear(256, 128),
-            nn.ReLU(inplace=True),
-            nn.Linear(128, 10),
+            nn.Dropout(),
+            nn.Linear(out_dim * height * width, 512),
+            nn.ReLU(True),
+            nn.Dropout(),
+            nn.Linear(512, 512),
+            nn.ReLU(True),
+            nn.Linear(512, 10),
         )
 
     @staticmethod
@@ -53,16 +62,7 @@ class CnnModel(nn.Module):
                         Config.stride_height, Config.stride_width)
 
     def forward(self, inputs):
-
-        self.out_dim = Config.of_filter
-        self.filter_height = Config.filter_height
-        self.filter_width = Config.filter_width
-        self.stride_height = Config.stride_height
-        self.stride_width = Config.stride_width
-
-        y = self.layer(inputs)
-        y = y.view(-1, self.out_dim * int(((14 - self.filter_height) / self.stride_height + 1) / 2) *
-                    int(((24 - self.filter_width) / self.stride_width + 1) / 2))
-        y = self.fc(y)
-        return y
-
+        x = self.layer(inputs)
+        x = x.view(x.size(0), -1)
+        x = self.fc(x)
+        return x

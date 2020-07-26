@@ -1,0 +1,49 @@
+
+-------------------- [[#0 iteration]] --------------------
+
+-------------------- [[#0 iteration (param #0)]] --------------------
+parameter selected:  0
+action:  0
++---------+----------+--------------+-------------+--------------+-------------+
+|   Type  | ofFilter | FilterHeight | FilterWidth | StrideHeight | StrideWidth |
++---------+----------+--------------+-------------+--------------+-------------+
+| current |    10    |      3       |      5      |      2       |      1      |
+|   best  |    0     |      0       |      0      |      0       |      0      |
+|  worst  |    0     |      0       |      0      |      0       |      0      |
++---------+----------+--------------+-------------+--------------+-------------+
+
+--> [attention] a_t: tensor([[0.1987, 0.1315, 0.2692, 0.3335, 0.0671]], device='cuda:0')
+--> [lstm] done
+--> [train] start
+[Epoch 0, Batch 59] loss: 2.1092242817083995 acc: 0.2429
+[Epoch 0, Batch 119] loss: 1.8940970957279206 acc: 0.2849
+[Epoch 0, Batch 179] loss: 1.8193219919999442 acc: 0.3114
+[Epoch 0, Batch 239] loss: 1.7689745803674062 acc: 0.3258
+[Epoch 0, Batch 299] loss: 1.7314321041107177 acc: 0.3381
+[Epoch 0, Batch 359] loss: 1.7097565392653147 acc: 0.3588
+[Epoch 1, Batch 59] loss: 1.6452560444672903 acc: 0.3745
+[Epoch 1, Batch 119] loss: 1.6350557108720143 acc: 0.3771
+[Epoch 1, Batch 179] loss: 1.603483005364736 acc: 0.384
+[Epoch 1, Batch 239] loss: 1.5989249706268311 acc: 0.4002
+[Epoch 1, Batch 299] loss: 1.5910994291305542 acc: 0.4024
+[Epoch 1, Batch 359] loss: 1.5601440906524657 acc: 0.4167
+[Epoch 2, Batch 59] loss: 1.537940945227941 acc: 0.402
+[Epoch 2, Batch 119] loss: 1.5294708907604218 acc: 0.4199
+[Epoch 2, Batch 179] loss: 1.5277468303839365 acc: 0.429
+[Epoch 2, Batch 239] loss: 1.5228122115135192 acc: 0.4203
+[Epoch 2, Batch 299] loss: 1.5236342708269754 acc: 0.4311
+[Epoch 2, Batch 359] loss: 1.5078756968180338 acc: 0.4363
+[Epoch 3, Batch 59] loss: 1.483554720878601 acc: 0.4408
+[Epoch 3, Batch 119] loss: 1.4879128674666087 acc: 0.4397
+[Epoch 3, Batch 179] loss: 1.4670216917991639 acc: 0.4486
+[Epoch 3, Batch 239] loss: 1.4616732100645702 acc: 0.4489
+[Epoch 3, Batch 299] loss: 1.4725302159786224 acc: 0.4552
+[Epoch 3, Batch 359] loss: 1.4678972820440928 acc: 0.4542
+[Epoch 4, Batch 59] loss: 1.4218514919281007 acc: 0.4645
+[Epoch 4, Batch 119] loss: 1.4487979471683503 acc: 0.4629
+[Epoch 4, Batch 179] loss: 1.4231618920962015 acc: 0.4605
+[Epoch 4, Batch 239] loss: 1.413301940759023 acc: 0.4676
+[Epoch 4, Batch 299] loss: 1.4205086310704549 acc: 0.4668
+[Epoch 4, Batch 359] loss: 1.404484212398529 acc: 0.4626
+[Epoch 5, Batch 59] loss: 1.3951847632726033 acc: 0.4619
+[Epoch 5, Batch 119] loss: 1.3999403953552245 acc: 0.4766
