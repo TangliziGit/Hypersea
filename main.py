@@ -92,7 +92,7 @@ def iterate(train_loader, test_loader):
         best_param_id = np.argmax(rewards)
         observation, action, observation_ = q_tables.step(best_param_id)
 
-        model = train_cnn(train_loader)
+        model = train_cnn(train_loader, test_loader)
         accuracy = test_cnn(model, test_loader)
 
         # 检查正确率，更新正确率最值
