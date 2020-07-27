@@ -23,7 +23,9 @@ controller_optimizer = optim.Adam(controller.parameters(), lr=0.001)
 
 losses = []
 
+# global variable
 device = torch.device('cuda')
+train_loader, test_loader = None, None
 
 
 def main():
@@ -32,17 +34,18 @@ def main():
         transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
     ])
 
+    global train_loader, test_loader
     train_set = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
     train_loader = torch.utils.data.DataLoader(train_set, batch_size=128, shuffle=True, num_workers=2)
     test_set = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)
     test_loader = torch.utils.data.DataLoader(test_set, batch_size=128, shuffle=False, num_workers=2)
 
-    iterate(train_loader, test_loader)
+    iterate()
 
     Logger.show_params()
 
 
-def iterate(train_loader, test_loader):
+def iterate():
     i = 0
     while Config.last_accuracy <= 0.80:
         Logger.iteration_start(i)
@@ -61,8 +64,8 @@ def iterate(train_loader, test_loader):
             Logger.show_params()
 
             # 训练&获取&测试模型
-            model = train_cnn(train_loader, test_loader)
-            accuracy = test_cnn(model, test_loader)
+            model = train_cnn()
+            accuracy = test_cnn(model)
             reward = accuracy - Config.last_accuracy
 
             # 检查正确率，更新正确率最值
@@ -92,8 +95,8 @@ def iterate(train_loader, test_loader):
         best_param_id = np.argmax(rewards)
         observation, action, observation_ = q_tables.step(best_param_id)
 
-        model = train_cnn(train_loader, test_loader)
-        accuracy = test_cnn(model, test_loader)
+        model = train_cnn()
+        accuracy = test_cnn(model)
 
         # 检查正确率，更新正确率最值
         Config.update_acc(accuracy)
@@ -136,7 +139,7 @@ def learn(obs, nobs, actions, rewards, a_ts):
     Logger.stage('learn', f"controller loss: f{loss.item() / len(a_ts)}")
 
 
-def train_cnn(train_loader, test_loader):
+def train_cnn():
     # 根据刚才更新的参数，初始化模型
     cnn = CnnModel.from_config(3).to(device)
 
@@ -168,7 +171,7 @@ def train_cnn(train_loader, test_loader):
             losses[-1].append(loss.item())
 
             if (i + 1) % log_interval == 0:
-                acc = test_cnn(cnn, test_loader, log=False)
+                acc = test_cnn(cnn, log=False)
                 Logger.print(f'[Epoch {epoch}, Batch {i}] loss: {totalLoss / log_interval} acc: {acc}')
                 totalLoss = .0
                 pkl.dump(losses, open('pkl/losses.pkl', 'wb'))
@@ -178,11 +181,10 @@ def train_cnn(train_loader, test_loader):
     return cnn
 
 
-def test_cnn(model, test_loader, log=True):
+def test_cnn(model, log=True):
     correct, total = .0, .0
-    testData = iter(test_loader)
     with torch.no_grad():
-        for images, labels in testData:
+        for images, labels in test_loader:
             images, labels = images.to(device), labels.to(device)
             outputs = model(images)
             _, predicted = torch.max(outputs.data, 1)
