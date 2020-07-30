@@ -1,3 +1,5 @@
+import traceback
+
 import torch
 import torch.nn as nn
 import torchvision
@@ -72,7 +74,6 @@ def iterate():
             Config.update_acc(accuracy)
             Config.last_accuracy = accuracy
 
-            # q_tables.learn(reward, observation, action, observation_)
             Config.last_a_t = Config.a_t
 
             # 维护Q表和Controller学习的输入
@@ -118,25 +119,15 @@ def learn(obs, nobs, actions, rewards, a_ts):
 
     sum_loss = 0
     for a_t in a_ts:
-        # a_t = torch.autograd.Variable(a_t, requires_grad=True)
-
         controller_optimizer.zero_grad()
         loss = controller_criterion(a_t, a_t_label)
         loss.backward(retain_graph=True)
-        # Logger.print("W_h", controller.W_h.weight.grad)
-        # Logger.print("W_v", controller.W_v.weight.grad)
-        # Logger.print("W_g", controller.W_g.weight.grad)
-        # Logger.print(a_t.grad)
-
         controller_optimizer.step()
-        sum_loss += loss.item()
+        sum_loss = sum_loss + loss.item()
 
     q_tables.step(best_param_id)
 
-    # Logger.print("w_h", controller.W_h.weight)
-    # Logger.print("w_g", controller.W_g.weight)
-    # Logger.print("w_v", controller.W_v.weight)
-    Logger.stage('learn', f"controller loss: f{loss.item() / len(a_ts)}")
+    Logger.stage('learn', f"controller loss: f{sum_loss / len(a_ts)}")
 
 
 def train_cnn():
@@ -145,12 +136,13 @@ def train_cnn():
 
     # 此处仅以 Config 中的 cnn 模型参数和 h_t, c_t 为输入
     # a_t, h_t, c_t 作为输出: 其中 h_t, c_t 作为 lstm 的结果，a_t 作为注意力的结果
+    controller.zero_grad()
     controller.forward()
 
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(cnn.parameters(), lr=0.001)
 
-    log_interval = 60
+    log_interval = 180
     losses.append([])
 
     Logger.stage('train', 'start')
@@ -198,4 +190,7 @@ def test_cnn(model, log=True):
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        Logger.error(traceback.format_exc())

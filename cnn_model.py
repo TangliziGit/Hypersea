@@ -29,17 +29,17 @@ class CnnModel(nn.Module):
         self.layer = nn.Sequential(
             nn.Conv2d(in_dim, 64, kernel_size=2, padding=1),
             nn.BatchNorm2d(64),
-            nn.ReLU(True),
+            nn.ReLU(),
             nn.MaxPool2d(kernel_size=2, stride=2),
 
             nn.Conv2d(64, 256, kernel_size=2, padding=1),
             nn.BatchNorm2d(256),
-            nn.ReLU(True),
+            nn.ReLU(),
             nn.MaxPool2d(kernel_size=2, stride=2),
 
             nn.Conv2d(256, out_dim, kernel_size=(filter_height, filter_width), stride=(stride_height, stride_width)),
             nn.BatchNorm2d(out_dim),
-            nn.ReLU(True),
+            nn.ReLU(),
             nn.MaxPool2d(kernel_size=2, stride=2),
         )
 
@@ -48,10 +48,10 @@ class CnnModel(nn.Module):
         self.fc = nn.Sequential(
             nn.Dropout(),
             nn.Linear(out_dim * height * width, 512),
-            nn.ReLU(True),
+            nn.ReLU(),
             nn.Dropout(),
             nn.Linear(512, 512),
-            nn.ReLU(True),
+            nn.ReLU(),
             nn.Linear(512, 10),
         )
 
