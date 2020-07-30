@@ -7,10 +7,13 @@ from config import Config
 
 class Logger:
     _filename = f"log/{time.strftime('%Y-%m-%d_%H:%M:%S', time.localtime(time.time()))}.log"
-    _file = open(_filename, 'w')
+    _file = None
+    if not Config.TEST:
+        _file = open(_filename, 'w')
 
     _prefix = '-->'
-    _iteration = '-' * 20
+    _iteration = '-' * 25
+    _error = '!' * 30
 
     @staticmethod
     def iteration_start(it, content = None):
@@ -30,8 +33,14 @@ class Logger:
         content = ' '.join(content)
 
         print(content)
-        Logger._file.write(content + '\n')
-        Logger._file.flush()
+        if not Config.TEST:
+            Logger._file.write(content + '\n')
+            Logger._file.flush()
+
+    @staticmethod
+    def error(e):
+        Logger.print(f"{Logger._error} [[ ERROR OCCUR ]] {Logger._error}")
+        Logger.print(e)
 
     @staticmethod
     def show_params():
