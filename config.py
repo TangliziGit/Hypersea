@@ -2,6 +2,7 @@ import torch
 
 
 class Config:
+    TEST = False
     N_RANGE = 75
 
     config_bak = {}
