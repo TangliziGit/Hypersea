@@ -1,5 +1,7 @@
 import time
 
+from logger import Logger
+
 
 class QStatus:
     def __init__(self, value, delta, max, type):
@@ -10,7 +12,7 @@ class QStatus:
         self.action_space = ['Add', 'Sub']
         self.n_actions = len(self.action_space)
 
-    def step(self, action, is_change = True):
+    def step(self, action, is_change=True):
         # [0, 1] -> [-1, 1]
         sign = action * 2 - 1
         delta = sign * self.delta

@@ -3,7 +3,7 @@ import torch
 
 class Config:
     TEST = False
-    N_RANGE = 75
+    N_RANGE = 1
 
     config_bak = {}
 
@@ -15,7 +15,6 @@ class Config:
     h_t = None
     c_t = None
     last_accuracy = 0.5
-    init_accuracy = 0.5
     reward = 0.00
 
     # VGG3: [512, 2, 2, 1, 1]
@@ -25,14 +24,14 @@ class Config:
     stride_height = 2
     stride_width = 1
 
-    best_acc = 0.5
+    best_acc = 0.0
     best_of_filter = 0
     best_filter_height = 0
     best_filter_width = 0
     best_stride_height = 0
     best_stride_width = 0
 
-    worst_acc = 0.5
+    worst_acc = 1.0
     worst_of_filter = 0
     worst_filter_height = 0
     worst_filter_width = 0
@@ -69,13 +68,15 @@ class Config:
         cb['of_filter'], cb['filter_height'], cb['filter_width'], cb['stride_height'], cb['stride_width'] = \
             Config.of_filter, Config.filter_height, Config.filter_width, Config.stride_height, Config.stride_width
 
-        cb['best_of_filter'], cb['best_filter_height'], cb['best_filter_width'], cb['best_stride_height'], cb[
-            'best_stride_width'] = \
-            Config.best_of_filter, Config.best_filter_height, Config.best_filter_width, Config.best_stride_height, Config.best_stride_width
+        # cb['best_of_filter'], cb['best_filter_height'], cb['best_filter_width'], cb['best_stride_height'],\
+        #     cb['best_stride_width'], cb['best_acc'] = \
+        #    Config.best_of_filter, Config.best_filter_height, Config.best_filter_width, Config.best_stride_height,\
+        #    Config.best_stride_width, Config.best_acc
 
-        cb['worst_of_filter'], cb['worst_filter_height'], cb['worst_filter_width'], cb['worst_stride_height'], cb[
-            'worst_stride_width'] = \
-            Config.worst_of_filter, Config.worst_filter_height, Config.worst_filter_width, Config.worst_stride_height, Config.worst_stride_width
+        # cb['worst_of_filter'], cb['worst_filter_height'], cb['worst_filter_width'], cb['worst_stride_height'],\
+        #     cb['worst_stride_width'], cb['worst_acc'] = \
+        #     Config.worst_of_filter, Config.worst_filter_height, Config.worst_filter_width, Config.worst_stride_height,\
+        #     Config.worst_stride_width, Config.worst_acc
 
     @staticmethod
     def rollback():
@@ -90,10 +91,13 @@ class Config:
         Config.of_filter, Config.filter_height, Config.filter_width, Config.stride_height, Config.stride_width = \
             cb['of_filter'], cb['filter_height'], cb['filter_width'], cb['stride_height'], cb['stride_width']
 
-        Config.best_of_filter, Config.best_filter_height, Config.best_filter_width, Config.best_stride_height, Config.best_stride_width = \
-            cb['best_of_filter'], cb['best_filter_height'], cb['best_filter_width'], cb['best_stride_height'], cb[
-                'best_stride_width']
+        # Config.best_of_filter, Config.best_filter_height, Config.best_filter_width, Config.best_stride_height,\
+        #     Config.best_stride_width, Config.best_acc = \
+        #     cb['best_of_filter'], cb['best_filter_height'], cb['best_filter_width'], cb['best_stride_height'], cb[
+        #         'best_stride_width'], cb['best_acc']
 
-        Config.worst_of_filter, Config.worst_filter_height, Config.worst_filter_width, Config.worst_stride_height, Config.worst_stride_width = \
-            cb['worst_of_filter'], cb['worst_filter_height'], cb['worst_filter_width'], cb['worst_stride_height'], cb[
-                'worst_stride_width']
+        # Config.worst_of_filter, Config.worst_filter_height, Config.worst_filter_width, Config.worst_stride_height,\
+        #     Config.worst_stride_width, Config.worst_acc = \
+        #     cb['worst_of_filter'], cb['worst_filter_height'], cb['worst_filter_width'], cb['worst_stride_height'], cb[
+        #         'worst_stride_width'], cb['worst_acc']
+

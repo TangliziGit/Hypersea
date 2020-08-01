@@ -21,7 +21,7 @@ q_tables = QTables()
 # ControllerModel
 controller = ControllerModel()
 controller_criterion = nn.CrossEntropyLoss()
-controller_optimizer = optim.Adam(controller.parameters(), lr=0.001)
+controller_optimizer = optim.Adam(controller.parameters(), lr=0.01)
 
 losses = []
 
@@ -44,13 +44,14 @@ def main():
 
     iterate()
 
-    Logger.show_params()
+    Logger.show_status()
 
 
 def iterate():
     i = 0
     while Config.last_accuracy <= 0.80:
         Logger.iteration_start(i)
+        Logger.show_status(is_stable=True)
         # reward = get_reward(device, train_loader, test_loader)
 
         obs, nobs, actions, rewards, a_ts = [], [], [], [], []
@@ -63,7 +64,7 @@ def iterate():
             # 将奖励值送进Q表内强化学习更新五个参数值
             observation, action, observation_ = q_tables.step(param_id)
 
-            Logger.show_params()
+            Logger.show_status()
 
             # 训练&获取&测试模型
             model = train_cnn()
@@ -75,6 +76,7 @@ def iterate():
             Config.last_accuracy = accuracy
 
             Config.last_a_t = Config.a_t
+            q_tables.learn(reward, observation, action, observation_, param_id)
 
             # 维护Q表和Controller学习的输入
             obs.append(observation)
@@ -93,8 +95,11 @@ def iterate():
         learn(obs, nobs, actions, rewards, a_ts)
         # 选择一个参数进行更新，获取前后状态和对应动作
         # 将奖励值送进Q表内强化学习更新五个参数值
+        # 重置Config
+        Logger.show_status()
         best_param_id = np.argmax(rewards)
         observation, action, observation_ = q_tables.step(best_param_id)
+        Logger.show_status()
 
         model = train_cnn()
         accuracy = test_cnn(model)
@@ -109,8 +114,8 @@ def iterate():
 
 
 def learn(obs, nobs, actions, rewards, a_ts):
-    for param_id, (ob, nob, action, reward) in enumerate(zip(obs, nobs, actions, rewards)):
-        q_tables.learn(reward, ob, action, nob, param_id)
+    # for param_id, (ob, nob, action, reward) in enumerate(zip(obs, nobs, actions, rewards)):
+    #     q_tables.learn(reward, ob, action, nob, param_id)
 
     # TODO: consider rewards are all negative
     best_param_id = np.argmax(rewards)
@@ -125,7 +130,7 @@ def learn(obs, nobs, actions, rewards, a_ts):
         controller_optimizer.step()
         sum_loss = sum_loss + loss.item()
 
-    q_tables.step(best_param_id)
+    # q_tables.step(best_param_id)
 
     Logger.stage('learn', f"controller loss: f{sum_loss / len(a_ts)}")
 
@@ -142,19 +147,18 @@ def train_cnn():
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(cnn.parameters(), lr=0.001)
 
-    log_interval = 180
+    log_interval = (Config.N_RANGE // 20 + 1)
+    totalLoss = .0
     losses.append([])
 
     Logger.stage('train', 'start')
     for epoch in range(Config.N_RANGE):
-        totalLoss = .0
 
-        for i, data in enumerate(train_loader, 0):
+        for data in train_loader:
             inputs, labels = data
             inputs, labels = inputs.to(device), labels.to(device)
 
             optimizer.zero_grad()
-            # print(cnn(inputs).size(), labels.size())
             loss = criterion(cnn(inputs), labels)
             loss.backward()
 
@@ -162,11 +166,11 @@ def train_cnn():
             totalLoss += loss.item()
             losses[-1].append(loss.item())
 
-            if (i + 1) % log_interval == 0:
-                acc = test_cnn(cnn, log=False)
-                Logger.print(f'[Epoch {epoch}, Batch {i}] loss: {totalLoss / log_interval} acc: {acc}')
-                totalLoss = .0
-                pkl.dump(losses, open('pkl/losses.pkl', 'wb'))
+        if (epoch + 1) % log_interval == 0:
+            acc = test_cnn(cnn, log=False)
+            Logger.print(f'[Epoch {epoch}] loss: {totalLoss / len(train_loader)} acc: {acc}')
+            totalLoss = .0
+            pkl.dump(losses, open('pkl/losses.pkl', 'wb'))
 
     Logger.stage('train', 'finish')
     torch.save(cnn, 'pkl/model.pkl')
@@ -191,6 +195,7 @@ def test_cnn(model, log=True):
 
 if __name__ == "__main__":
     try:
+        Logger.set_q_tables(q_tables)
         main()
     except Exception as e:
         Logger.error(traceback.format_exc())

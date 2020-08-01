@@ -27,7 +27,6 @@ class QTables:
         a_t = Config.a_t
 
         # 判断是哪个参数需要进行强化学习
-        action = 0
         if param_id is None:
             param_id_tensor = torch.max(a_t, 1)[1]
             param_id = param_id_tensor.item()
