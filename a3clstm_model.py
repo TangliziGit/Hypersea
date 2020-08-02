@@ -17,11 +17,6 @@ lstm_dim = 5
 class A3C_LSTM(torch.nn.Module):
     def __init__(self, num_outputs):
         super(A3C_LSTM, self).__init__()
-        # self.conv1 = nn.Conv2d(1, 32, 3, stride=1, padding=1)
-        # self.conv2 = nn.Conv2d(32, 32, 3, stride=2, padding=1)
-        # self.conv3 = nn.Conv2d(32, 64, 3, stride=2, padding=1)
-        # self.conv4 = nn.Conv2d(64, 512, 3, stride=1, padding=1)
-
         self.Wai = nn.Linear(w_dim, w_dim, bias=False)
         self.Wh = nn.Linear(lstm_dim, w_dim, bias=False)
         self.att = nn.Linear(w_dim, 5)
@@ -59,14 +54,12 @@ class A3C_LSTM(torch.nn.Module):
         # attention !!!!
         # .clone() means states will be used in other way           (cause inplace op)
         # .detach() means it has no relationship with previous net  (cause zero grad on Wai, Wh)
-        self.inputs = inputs.clone().detach()
+        self.inputs = inputs.clone()
         self.Uv = self.Wai(self.inputs)               # [1, dim]
         self.Uh = self.Wh(hx)                    # [1, dim]
-        print(self.Wai.weight.size(), self.inputs.size())
-        print(self.Wh.weight.size(), hx.size())
 
-        self.Uhv = self.Uv + self.Uh                       # [1, dim]
-        self.TUhv = self.tanh(self.Uhv)
+        self.Uhv = torch.tanh(self.Uv) + torch.tanh(self.Uh)                       # [1, dim]
+        self.TUhv = self.Uhv
         self.att_ = self.att(self.TUhv)     # [1, 5]
 
         # dim=1 means softmax on 1 dim      (cause zero grad on att weight)
