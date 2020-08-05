@@ -24,9 +24,9 @@ def iterate():
 
     optimizer = optim.Adam(model.parameters(), lr=Config.lr)
 
-    i = 0
+    iter = 0
     while True:
-        Logger.iteration_start(i)
+        Logger.iteration_start(iter)
         for step in range(Config.N_STEPS):
             Logger.show_status()
             player.action_train()
@@ -57,27 +57,10 @@ def iterate():
         player.model.zero_grad()
         (policy_loss + 0.5 * value_loss).backward(retain_graph=True)
 
-        print(model.Wai.weight.grad)
-        print(model.Wh.weight.grad)
-        print(model.att.weight.grad)
-
-        # print(model.inputs.grad)
-        # print(player.hx.grad)
-        # print(player.cx.grad)
-        # print(model.Uv.grad)
-        # print(model.Uh.grad)
-        # print(model.Uhv.grad)
-        # print(model.att_.grad)
-        # print(model.alpha.grad)
-        # print(model.zt.grad)
-
-        # print(model.actor_linear.weight.grad)
-        # print(model.critic_linear.weight.grad)
-
         optimizer.step()
         player.clear_actions()
         Logger.stage('loss', f'{(policy_loss + 0.5*value_loss).item()}')
-        i += 1
+        iter += 1
 
 
 if __name__ == "__main__":

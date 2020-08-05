@@ -12,7 +12,7 @@ class Logger:
         _file = open(_filename, 'w')
 
     _prefix = '-->'
-    _iteration = '-' * 35
+    _iteration = '-' * 34
     _error = '!' * 30
 
     @staticmethod

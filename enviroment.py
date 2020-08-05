@@ -123,6 +123,5 @@ class Environment:
                 totalLoss = .0
 
         acc = Environment._test_cnn_model(cnn, log=True)
-        reward = acc
-        Logger.stage('reward', f'finished {reward}')
-        return reward
+        Logger.stage('accuracy', f'finished {acc}')
+        return acc

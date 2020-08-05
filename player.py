@@ -2,7 +2,9 @@ import torch
 import torch.nn.functional as F
 from torch.autograd import Variable
 
+from config import Config
 from enviroment import Environment
+from logger import Logger
 
 
 class Player:
@@ -14,7 +16,7 @@ class Player:
         self.hx = torch.zeros((1, 5)).cuda()
         self.cx = torch.zeros((1, 5)).cuda()
 
-        self.reward = 0
+        self.acc = 0
         self.values = []
         self.log_probs = []
         self.rewards = []
@@ -33,11 +35,17 @@ class Player:
         action = prob.multinomial(1).data                   # choose action
         log_prob_ = log_prob.gather(1, action)     # get corresponding prob
 
-        self.state, self.reward = self.env.step(action.cpu().numpy()[0][0])
+        self.state, acc = self.env.step(action.cpu().numpy()[0][0])
+
+        reward = acc - self.acc
+        self.acc = acc
 
         self.values.append(value)
         self.log_probs.append(log_prob_)
-        self.rewards.append(self.reward)
+        self.rewards.append(reward)
+
+        Config.update_states(acc, self.state.cpu().numpy().tolist())
+        Logger.stage('reward', f'{reward}')
 
     def clear_actions(self):
         self.values = []
