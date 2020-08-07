@@ -1,7 +1,7 @@
 class Config:
     TEST = False
-    N_CNN_EPOCH = 75
-    N_STEPS = 15
+    N_CNN_EPOCH = 5 # 75
+    N_STEPS = 2
     IMAGE_WIDTH = 32
 
     lr = 0.001
