@@ -79,6 +79,7 @@ class Environment:
 
     @staticmethod
     def _test_cnn_model(model, log=True):
+        model.eval()
         correct, total = .0, .0
         with torch.no_grad():
             for images, labels in Environment._test_loader:
@@ -96,6 +97,7 @@ class Environment:
     @staticmethod
     def get_reward(states):
         cnn = CnnModel.from_states(states).cuda()
+        cnn.train()
 
         criterion = nn.CrossEntropyLoss()
         optimizer = optim.Adam(cnn.parameters(), lr=0.001)
