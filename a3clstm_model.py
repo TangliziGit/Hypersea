@@ -55,20 +55,20 @@ class A3C_LSTM(torch.nn.Module):
         # .clone() means states will be used in other way           (cause inplace op)
         # .detach() means it has no relationship with previous net  (cause zero grad on Wai, Wh)
         self.inputs = inputs.clone()
-        self.Uv = self.Wai(self.inputs)               # [1, dim]
-        self.Uh = self.Wh(hx)                    # [1, dim]
+        self.Uv = self.Wai(self.inputs)                     # [1, dim]
+        self.Uh = self.Wh(hx)                               # [1, dim]
 
-        self.Uhv = torch.tanh(self.Uv) + torch.tanh(self.Uh)                       # [1, dim]
-        self.TUhv = self.Uhv
-        self.att_ = self.att(self.TUhv)     # [1, 5]
+        self.Uhv = self.Uv + self.Uh                        # [1, dim]
+        self.TUhv = F.leaky_relu(self.Uhv)
+        self.att_ = self.att(self.TUhv)                     # [1, 5]
 
         # dim=1 means softmax on 1 dim      (cause zero grad on att weight)
         self.alpha = F.softmax(self.att_, dim=1)            # [1, 5]
-        self.zt = self.inputs * self.alpha                # [1, 5 == dim]
+        self.zt = self.inputs * self.alpha                  # [1, 5 == dim]
 
         hx, cx = self.lstm(self.zt, (hx, cx))
 
-        return self.critic_linear(hx), self.actor_linear(hx), (hx, cx)  # , alpha_reshape
+        return self.critic_linear(hx), self.actor_linear(hx), (hx, cx)
 
 
 def norm_col_init(weights, std=1.0):

@@ -35,16 +35,15 @@ class Player:
         action = prob.multinomial(1).data                   # choose action
         log_prob_ = log_prob.gather(1, action)     # get corresponding prob
 
-        self.state, acc = self.env.step(action.cpu().numpy()[0][0])
+        self.state, self.acc = self.env.step(action.cpu().numpy()[0][0])
 
-        reward = acc - self.acc
-        self.acc = acc
+        reward = self.acc
 
         self.values.append(value)
         self.log_probs.append(log_prob_)
         self.rewards.append(reward)
 
-        Config.update_states(acc, self.state.cpu().numpy().tolist())
+        Config.update_states(self.acc, self.state.cpu().numpy().tolist())
         Logger.stage('reward', f'{reward}')
 
     def clear_actions(self):
