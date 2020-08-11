@@ -55,11 +55,12 @@ class A3C_LSTM(torch.nn.Module):
         # .clone() means states will be used in other way           (cause inplace op)
         # .detach() means it has no relationship with previous net  (cause zero grad on Wai, Wh)
         self.inputs = inputs.clone()
+        self.inputs[0] = self.inputs[0] * 0.01
         self.Uv = self.Wai(self.inputs)                     # [1, dim]
         self.Uh = self.Wh(hx)                               # [1, dim]
 
         self.Uhv = self.Uv + self.Uh                        # [1, dim]
-        self.TUhv = F.leaky_relu(self.Uhv)
+        self.TUhv = torch.tanh(self.Uhv)
         self.att_ = self.att(self.TUhv)                     # [1, 5]
 
         # dim=1 means softmax on 1 dim      (cause zero grad on att weight)
