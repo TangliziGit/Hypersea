@@ -44,7 +44,7 @@ class Player:
         Logger.print(f"new state: {self.state}")
         Logger.print(f"new reward: {self.acc}")
 
-        reward = self.acc
+        reward = 1 - self.acc
 
         self.values.append(value)
         self.log_probs.append(log_prob_)
